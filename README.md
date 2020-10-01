@@ -64,7 +64,6 @@ dependencies {
 ```java
 new ConfirmDialog(getSupportFragmentManager())
     .setTitle("ini title")
-    .setTitleSize(21)
     .setContent("ini content")
     .setBtnCancelTitle("Batal")
     .setBtnOkTitle("Yuhuu")
