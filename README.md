@@ -80,6 +80,27 @@ new ConfirmDialog(getSupportFragmentManager())
     .show();
 ```
 
+Bisa lansung dipanggil seperti diatas, atau kamu bisa pakai cara ini jika ingin memisahkan bagian `show()` nya:
+
+```java
+ConfirmDialog dialog = new ConfirmDialog(getSupportFragmentManager())
+    .setTitle("ini title")
+    .setContent("ini content");
+dialog.onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
+        @Override
+        public void onCancelPressed() {
+            Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+        }
+    });
+dialog.onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed() {
+            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+        }
+    });
+dialog.show();
+```
+
 **Preview** :
 
 <p align="center">
