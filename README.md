@@ -260,7 +260,7 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 
 **Preview** :
 
-|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_19.png" width="400"/>|
+|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_19.png"/>|
 |--|--|
 
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_20.png" width="400"/>|
@@ -304,7 +304,7 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 
 **Preview** :
 
-|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_23.png" width="400"/>|
+|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_23.png"/>|
 |--|--|
 
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_24.png" width="400"/>|
