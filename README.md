@@ -59,6 +59,8 @@ dependencies {
 
 ### ConfirmDialog
 
+Dialog yang berisi **1 Title, 1 Content, 1 Negative Button, 1 Positif Button** yang bisa kamu pakai untuk mengkonfirmasi aksi yang akan dilakukan setelahnya.
+
 **Code** :
 
 ```java
@@ -118,3 +120,42 @@ dialog.show();
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
 **Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_1.md))**
+
+---
+
+### InfoDialog
+
+Dialog yang berisi **1 Title, 1 Content, 1 Positif Button** yang bisa kamu pakai untuk menampilkan informasi.
+
+**Code** :
+
+```java
+new InfoDialog(getSupportFragmentManager())
+    .setDialogType(DialogType.DialogSuccess)
+    .setTitle("ini title")
+    .setContent("ini content")
+    .onOkPressedCallBack(new InfoDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed() {
+            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .show();
+```
+
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png" width="500"/>
+</p>
+
+## InfoDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**

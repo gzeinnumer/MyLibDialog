@@ -33,7 +33,7 @@ public class InfoDialogSetting extends BaseDialog {
     private Button _dBtnOkMBO;
     private Button _dBtnOkMBC;
     protected ButtonStyle btnStyle;
-    protected DialogType dialogType;
+    protected DialogType dialogType = DialogType.DialogSuccess;
 
     protected String tvTitleValue;
     protected String tvContentValue;
