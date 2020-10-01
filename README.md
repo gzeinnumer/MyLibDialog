@@ -23,7 +23,6 @@
 - [x] LoadingDialog
 - [x] SingleDatePickerDialog
 - [x] MultiDatePickerDialog
-- [x] TimePickerDialog
 
 ---
 
@@ -209,11 +208,7 @@ Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan
 
 ```java
 final LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
-        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
-        .setContent("ini content")
-        .setContentSize(21)
-        .setContentColor(Color.parseColor("#03DAC5"))
-        .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+        .setContent("ini content");
 
 loadingDialog.show();
 
@@ -239,7 +234,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 ### SingleDatePickerDialog
 
-Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan Loading.
+Dialog yang berisi **Calender yang sama dengan material.io** yang bisa kamu pakai untuk megambil tanggal.
 
 **Code** :
 
@@ -290,7 +285,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 ### MultiDatePickerDialog
 
-Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan Loading.
+Dialog yang berisi **Calender yang sama dengan material.io** yang bisa kamu pakai untuk megambil tanggal dengan range yang kamu pilih.
 
 **Code** :
 
