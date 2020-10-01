@@ -114,12 +114,6 @@ new ConfirmDialog(getSupportFragmentManager())
     .show();
 ```
 
-**Preview** :
-
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_4.png" width="500"/>
-</p>
-
 ##
 
 Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/ConfirmDialog/MainActivity.java))
