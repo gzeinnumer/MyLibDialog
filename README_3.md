@@ -102,7 +102,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 **Code** :
 ```java
-new ConfirmDialog(getSupportFragmentManager())
+new NumberPickerDialog(getSupportFragmentManager())
     .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
     ...
     .show();
@@ -110,7 +110,7 @@ new ConfirmDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/InfoDialog/MainActivity.java))
+Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/NumberPickerDialog/MainActivity.java))
 
 **Preview** :
 

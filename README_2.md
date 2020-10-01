@@ -102,7 +102,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 **Code** :
 ```java
-new ConfirmDialog(getSupportFragmentManager())
+new InfoDialog(getSupportFragmentManager())
     .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
     ...
     .show();
