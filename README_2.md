@@ -54,6 +54,13 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 **4. Parent Button**
 - Mengganti ukuran Text Button
+  - `.setDialogType(DialogType.DialogError)`
+    - Value yang bisa dipakai
+      - `DialogType.DialogError` -> RED
+      - `DialogType.DialogSuccess` -> GREEN
+      - `DialogType.DialogWarning` -> YELLOW
+      - dll
+- Mengganti ukuran Text Button
   - `.setButtonTextSize(21)`
 - Mengganti style Button
   - `.setButtonStyle(ButtonStyle.ButtonContained)`
