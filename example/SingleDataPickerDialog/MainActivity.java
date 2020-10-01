@@ -1,8 +1,6 @@
 package com.gzeinnumer.mylibstesting;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.View;
 
 public class MainActivity extends BaseTesting {
 

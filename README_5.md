@@ -26,7 +26,7 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/LoadingDialog/MainActivity.java))
+Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/SingleDataPickerDialog/MainActivity.java))
 
 **Preview** :
 
