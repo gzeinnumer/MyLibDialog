@@ -120,8 +120,17 @@ dialog.show();
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
 
 **1. Title**
-- Mengganti Title dari Dialog
+- Mengganti Text Title
   - `.setTitle("ini title")`
-- .setTitleSize(21)
-- .setTitleColor(getResources().getColor(R.color.colorAccent))
-- .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
+- Mengganti ukuran Text Title
+  - `.setTitleSize(21)`
+- Mengganti warna tulisan Text Title
+  - `.setTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setTitleColor(Color.parseColor("#03DAC5"))`
+- Mengganti alignment dari Text Title
+  - .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
+    - Value yang bisa dipakai
+      - `View.TEXT_ALIGNMENT_TEXT_END`
+      - `View.TEXT_ALIGNMENT_CENTER`
+      - `View.TEXT_ALIGNMENT_CENTER`
+      - dll
