@@ -243,9 +243,9 @@ new SingleDatePickerDialog(getSupportFragmentManager())
     .setTimeZone("GMT")
     .setTitle("Pilih tanggal")
     .setSelectedToday(true)
-    .setTimeFormat("dd/MM/yyyy")
-    .setStartDate("1/08/2020")
-    .setEndDate("31/12/2020")
+    .setTimeFormat("dd/MM/yyyy") //pastikan polanya sama
+    .setStartDate("1/08/2020") //pastikan polanya sama
+    .setEndDate("31/12/2020") //pastikan polanya sama
     .onOkPressedCallBack(new SingleDatePickerDialog.OnOkPressed() {
         @Override
         public void onOkPressed(String value) {
@@ -255,6 +255,7 @@ new SingleDatePickerDialog(getSupportFragmentManager())
     .build()
     .show();
 ```
+- Secara default
 
 Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
