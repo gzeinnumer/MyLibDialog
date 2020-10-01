@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
-import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
 public class MainActivity extends BaseTesting {
 
@@ -21,12 +20,11 @@ public class MainActivity extends BaseTesting {
 
     private void MyLibDialog() {
         new InfoDialog(getSupportFragmentManager())
-                .setDialogType(DialogType.DialogSuccess)
+                .setDialogType(DialogType.DialogError)
                 .setDialogCanvas(getResources().getDrawable(com.gzeinnumer.mylibdialog.R.drawable.rounded_corner_2))
                 .setTitle("ini title")
                 .setTitleSize(21)
                 .setTitleColor(getResources().getColor(com.gzeinnumer.mylibdialog.R.color.colorAccent))
-                .setTitleAlignment(View.TEXT_ALIGNMENT_INHERIT)
                 .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
                 .setContent("ini content")
                 .setContentSize(21)
@@ -35,7 +33,7 @@ public class MainActivity extends BaseTesting {
                 .setBtnOkTitle("Yuhuu")
                 .setBtnOkTitleColor(getResources().getColor(com.gzeinnumer.mylibdialog.R.color.colorAccent))
                 .setButtonTextSize(15)
-                .setButtonStyle(ButtonStyle.ButtonContained)
+                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .setOkIconLeft(com.gzeinnumer.mylibdialog.R.drawable.ic_baseline_add_24)
                 .setOkIconTop(com.gzeinnumer.mylibdialog.R.drawable.ic_baseline_add_24)
                 .setOkIconRight(com.gzeinnumer.mylibdialog.R.drawable.ic_baseline_add_24)

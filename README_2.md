@@ -1,7 +1,7 @@
 ## ConfirmDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_1.png"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png"/>
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
@@ -39,20 +39,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
       - dll
 
 
-**3. Button Cancel**
-- Mengganti Text Button Cancel
-  - `.setBtnCancelTitle("Batal")`
-- Mengganti warna tulisan Text Button Cancel
-  - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))`
-  - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
-- Mengganti Icon Button Cancel
-  - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
-  - `.setCancelIconTop(R.drawable.ic_baseline_add_24)`
-  - `.setCancelIconRight(R.drawable.ic_baseline_add_24)`
-  - `.setCancelIconBottom(R.drawable.ic_baseline_add_24)`
-
-
-**4. Button Ok**
+**3. Button Ok**
 - Mengganti Text Button Ok
   - `.setBtnOkTitle("Yuhuu")`
 - Mengganti warna tulisan Text Button Ok
@@ -65,7 +52,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
   - `.setOkIconBottom(R.drawable.ic_baseline_add_24)`
 
 
-**5. Parent Button**
+**4. Parent Button**
 - Mengganti ukuran Text Button
   - `.setButtonTextSize(21)`
 - Mengganti style Button
@@ -117,15 +104,15 @@ new ConfirmDialog(getSupportFragmentManager())
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_4.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_7.png" width="500"/>
 </p>
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/ConfirmDialog/MainActivity.java))
+Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/InfoDialog/MainActivity.java))
 
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_5.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_9.png" width="500"/>
 </p>
