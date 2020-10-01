@@ -1,7 +1,7 @@
 ## ConfirmDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_13.png"/>
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
@@ -81,7 +81,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 **Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_7.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_11.png" width="500"/>
 </p>
 
 **XML** :
@@ -115,5 +115,5 @@ Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_9.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_12.png" width="500"/>
 </p>
