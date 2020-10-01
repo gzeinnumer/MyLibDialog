@@ -190,6 +190,45 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
   - `.setButtonGravity(Gravity.CENTER)`
     - Value yang bisa dipakai
       - `Gravity.CENTER`
-      - `Gravity.LEFT`
-      - `Gravity.RIGHT`
+      - `Gravity.END`
+      - `Gravity.START`
       - dll
+
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_4.png" width="500"/>
+</p>
+
+**Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
+
+```xml
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <solid android:color="@android:color/white" />
+
+</shape>
+```
+
+**Code** :
+```java
+new ConfirmDialog(getSupportFragmentManager())
+    .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
+    ...
+    .show();
+```
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_4.png" width="500"/>
+</p>
+
+Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))
+
