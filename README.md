@@ -110,7 +110,6 @@ dialog.show();
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
 
-----
 ## ConfirmDialog -> Customize
 
 <p align="center">
@@ -132,5 +131,65 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
     - Value yang bisa dipakai
       - `View.TEXT_ALIGNMENT_TEXT_END`
       - `View.TEXT_ALIGNMENT_CENTER`
+      - `View.TEXT_ALIGNMENT_TEXT_START`
+      - dll
+
+**2. Content**
+- Mengganti Text Content
+  - `.setContent("ini content")`
+- Mengganti ukuran Text Content
+  - `.setContentSize(21)`
+- Mengganti warna tulisan Text Content
+  - `.setContentColor(getResources().getColor(R.color.colorAccent))`
+  - `.setContentColor(Color.parseColor("#03DAC5"))`
+- Mengganti alignment dari Text Content
+  - .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)
+    - Value yang bisa dipakai
+      - `View.TEXT_ALIGNMENT_TEXT_END`
       - `View.TEXT_ALIGNMENT_CENTER`
+      - `View.TEXT_ALIGNMENT_TEXT_START`
+      - dll
+
+
+**3. Button Cancel**
+- Mengganti Text Button Cancel
+  - `.setBtnCancelTitle("Batal")`
+- Mengganti warna tulisan Text Button Cancel
+  - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
+- Mengganti Icon Button Cancel
+  - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconTop(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconRight(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconBottom(R.drawable.ic_baseline_add_24)`
+
+
+**4. Button Ok**
+- Mengganti Text Button Ok
+  - `.setBtnOkTitle("Yuhuu")`
+- Mengganti warna tulisan Text Button Ok
+  - `.setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setBtnOkTitleColor(Color.parseColor("#03DAC5"))`
+- Mengganti Icon Button Ok
+  - `.setOkIconLeft(R.drawable.ic_baseline_add_24)`
+  - `.setOkIconTop(R.drawable.ic_baseline_add_24)`
+  - `.setOkIconRight(R.drawable.ic_baseline_add_24)`
+  - `.setOkIconBottom(R.drawable.ic_baseline_add_24)`
+
+
+**5. Parent Button**
+- Mengganti ukuran Text Button
+  - `.setButtonTextSize(21)`
+- Mengganti style Button
+  - `.setButtonStyle(ButtonStyle.ButtonContained)`
+    - Value yang bisa dipakai
+      - `ButtonStyle.ButtonContained`
+      - `ButtonStyle.ButtonOutlined`
+      - `ButtonStyle.ButtonText`
+- Mengganti Gravity Parent Button
+  - `.setButtonGravity(Gravity.CENTER)`
+    - Value yang bisa dipakai
+      - `Gravity.CENTER`
+      - `Gravity.LEFT`
+      - `Gravity.RIGHT`
       - dll
