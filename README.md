@@ -61,24 +61,24 @@ dependencies {
 
 **Code** :
 
-```gradle
+```java
 new ConfirmDialog(getSupportFragmentManager())
-        .setTitle("ini title")
-        .setTitleSize(21)
-        .setContent("ini content")
-        .setBtnCancelTitle("Batal")
-        .setBtnOkTitle("Yuhuu")
-        .onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
-            @Override
-            public void onCancelPressed() {
-                Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
-            }
-        })
-        .onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
-            @Override
-            public void onOkPressed() {
-                Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-            }
-        })
-        .show();
+    .setTitle("ini title")
+    .setTitleSize(21)
+    .setContent("ini content")
+    .setBtnCancelTitle("Batal")
+    .setBtnOkTitle("Yuhuu")
+    .onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
+        @Override
+        public void onCancelPressed() {
+            Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed() {
+            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .show();
 ```
