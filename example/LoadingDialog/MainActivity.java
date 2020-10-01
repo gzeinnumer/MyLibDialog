@@ -2,11 +2,7 @@ package com.gzeinnumer.mylibstesting;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Toast;
-
-import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 
 public class MainActivity extends BaseTesting {
 

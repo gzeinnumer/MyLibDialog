@@ -21,42 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        _LoadingDialog();
-//        _DatePickerDialogSingleNew();
 //        _DatePickerDialogMultiNew();
 //        _TimePickerDialog();
     }
-
-//    private void _LoadingDialog() {
-//        ((Button) findViewById(R.id.btn)).setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("UseCompatLoadingForDrawables")
-//            @Override
-//            public void onClick(View v) {
-//                final LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
-//                        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_layer))
-//                        .setContent("ini content");
-//                        .setContentSize(21)
-//                        .setContentColor(Color.parseColor("#03DAC5"))
-//                        .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END);
-
-//                loadingDialog.show();
-//
-//                Thread timer = new Thread() {
-//                    public void run() {
-//                        try {
-//                            sleep(5000);
-//                        } catch (Exception e) {
-//                            e.printStackTrace();
-//                        } finally {
-//                            loadingDialog.dismis();
-//                        }
-//                    }
-//                };
-//                timer.start();
-//            }
-//        });
-//
-//    }
 //
 //    private void _DatePickerDialogSingleNew() {
 //        ((Button) findViewById(R.id.btn)).setOnClickListener(new View.OnClickListener() {

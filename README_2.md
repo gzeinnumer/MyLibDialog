@@ -1,4 +1,4 @@
-## ConfirmDialog -> Customize
+## InfoDialog -> Customize
 
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png"/>
