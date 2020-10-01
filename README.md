@@ -86,18 +86,21 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa pakai cara ini jika ingin 
 ConfirmDialog dialog = new ConfirmDialog(getSupportFragmentManager())
     .setTitle("ini title")
     .setContent("ini content");
+
 dialog.onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
-        @Override
-        public void onCancelPressed() {
-            Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
-        }
-    });
+    @Override
+    public void onCancelPressed() {
+        Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+    }
+});
+
 dialog.onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
-        @Override
-        public void onOkPressed() {
-            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-        }
-    });
+    @Override
+    public void onOkPressed() {
+        Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+    }
+});
+
 dialog.show();
 ```
 
@@ -106,3 +109,18 @@ dialog.show();
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
+
+### ConfirmDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_1.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+
+**1. Title**
+- .setTitle("ini title")
+    Mengganti Title dari Dialog
+- .setTitleSize(21)
+- .setTitleColor(getResources().getColor(R.color.colorAccent))
+- .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
