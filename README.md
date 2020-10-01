@@ -194,13 +194,15 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
       - `Gravity.START`
       - dll
 
+##
+
+**Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
 
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_4.png" width="500"/>
 </p>
 
-**Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
-
+**XML** :
 ```xml
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle" >
