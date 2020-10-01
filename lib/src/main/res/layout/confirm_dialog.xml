@@ -19,14 +19,15 @@
             style="@style/MyTextHeader"
             android:layout_width="match_parent"
             android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
             android:text="@string/title_dialog"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tv_content"
             style="@style/MyTextContent"
+            android:layout_marginTop="0dp"
             android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/text_margin"
             android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/content_dialog" />
 

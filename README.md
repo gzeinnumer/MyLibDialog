@@ -65,8 +65,6 @@ dependencies {
 new ConfirmDialog(getSupportFragmentManager())
     .setTitle("ini title")
     .setContent("ini content")
-    .setBtnCancelTitle("Batal")
-    .setBtnOkTitle("Yuhuu")
     .onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
         @Override
         public void onCancelPressed() {
@@ -81,3 +79,9 @@ new ConfirmDialog(getSupportFragmentManager())
     })
     .show();
 ```
+
+**Preview** :
+
+<p align="center">
+  <img src="https://i.ibb.co/YdvBMMG/hiya.gif"/>
+</p>
