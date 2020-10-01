@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_canvas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_corner">
+
+    <LinearLayout
+        android:id="@+id/dialog_canvas_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/def_margin">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/tv_content"
+            style="@style/MyTextContent"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="@string/content_dialog" />
+
+        <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:slidingloader_animDur="2000"
+            app:slidingloader_distanceToMove="12"
+            app:slidingloader_dotsDist="6dp"
+            app:slidingloader_dotsRadius="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/def_margin"
+            app:slidingloader_firstDotColor="@color/colorPrimary"
+            app:slidingloader_secondDotColor="@color/colorAccent"
+            app:slidingloader_thirdDotColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+</LinearLayout>
