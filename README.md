@@ -159,3 +159,120 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
 **Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
+
+---
+
+### InfoDialog
+
+Dialog yang berisi **1 Title, 1 Content, 1 Positif Button** yang bisa kamu pakai untuk menampilkan informasi.
+
+**Code** :
+
+```java
+new InfoDialog(getSupportFragmentManager())
+    .setDialogType(DialogType.DialogSuccess)
+    .setTitle("ini title")
+    .setContent("ini content")
+    .onOkPressedCallBack(new InfoDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed() {
+            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .show();
+```
+
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png" width="500"/>
+</p>
+
+## InfoDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
+
+---
+
+### InfoDialog
+
+Dialog yang berisi **1 Title, 1 Content, 1 Positif Button** yang bisa kamu pakai untuk menampilkan informasi.
+
+**Code** :
+
+```java
+new InfoDialog(getSupportFragmentManager())
+    .setDialogType(DialogType.DialogSuccess)
+    .setTitle("ini title")
+    .setContent("ini content")
+    .onOkPressedCallBack(new InfoDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed() {
+            Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+        }
+    })
+    .show();
+```
+
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png" width="500"/>
+</p>
+
+## InfoDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
+
+---
+
+### NumberPickerDialog
+
+Dialog yang berisi **1 Title, 1 Content, 1 Positif Button, 1 Negatif Button, 1 EditText, 1 Add Button, 1 Substract Button** yang bisa kamu pakai untuk mengambil angka.
+
+**Code** :
+
+```java
+new NumberPickerDialog(getSupportFragmentManager())
+    .setLastValue(12)
+    .setTitle("ini title")
+    .setContent("ini content")
+    .onOkPressedCallBack(new NumberPickerDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed(int value) {
+            Toast.makeText(MainActivity.this, "Nilai nya " + value, Toast.LENGTH_SHORT).show();
+        }
+    })
+    .show();
+```
+
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png" width="500"/>
+</p>
+
+## NumberPickerDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_8.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
