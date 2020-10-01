@@ -118,7 +118,7 @@ dialog.show();
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_1.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_1.md))**
 
 ---
 
@@ -142,7 +142,7 @@ new InfoDialog(getSupportFragmentManager())
     .show();
 ```
 
-Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
 **Preview** :
 
@@ -157,7 +157,7 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_2.md))**
 
 ---
 
@@ -181,7 +181,7 @@ new NumberPickerDialog(getSupportFragmentManager())
     .show();
 ```
 
-Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
 **Preview** :
 
@@ -196,7 +196,7 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_3.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_3.md))**
 
 ---
 
@@ -228,7 +228,7 @@ loadingDialog.dismis();
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_4.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_4.md))**
 
 ---
 
@@ -256,30 +256,21 @@ new SingleDatePickerDialog(getSupportFragmentManager())
         .show();
 ```
 
-Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
 **Preview** :
 
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_18.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_19.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_20.png" width="500"/>
-</p>
+|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_19.png" width="400"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_20.png" width="400"/>|
+|--|--|--|
 
 ## SingleDatePickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_21.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_21.png" width="300"/>
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_5.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_5.md))**
 
 ---
 
@@ -291,42 +282,33 @@ Dialog yang berisi **Calender yang sama dengan material.io** yang bisa kamu paka
 
 ```java
 new MultiDatePickerDialog(getSupportFragmentManager())
-        .setTimeZone("GMT")
-        .setTitle("Pilih tanggal")
-        .setTimeFormat("dd/MM/yyyy")
-        .setStartDate("1/08/2020")
-        .setEndDate("31/12/2020")
-        .onOkPressedCallBack(new MultiDatePickerDialog.OnOkPressed() {
-            @Override
-            public void onOkPressed(String firstDate, String secondDate) {
-                Toast.makeText(MainActivity.this, firstDate + " - " + secondDate, Toast.LENGTH_SHORT).show();
-            }
-        })
-        .build()
-        .show();
+    .setTimeZone("GMT")
+    .setTitle("Pilih tanggal")
+    .setTimeFormat("dd/MM/yyyy") //pastikan 3 pola ini sama
+    .setStartDate("1/08/2020") //pastikan 3 pola ini sama
+    .setEndDate("31/12/2020") //pastikan 3 pola ini sama
+    .onOkPressedCallBack(new MultiDatePickerDialog.OnOkPressed() {
+        @Override
+        public void onOkPressed(String firstDate, String secondDate) {
+            Toast.makeText(MainActivity.this, firstDate + " - " + secondDate, Toast.LENGTH_SHORT).show();
+        }
+    })
+    .build()
+    .show();
 ```
 
-Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`
+Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
 **Preview** :
 
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_22.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_23.png" width="500"/>
-</p>
-
-<p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_24.png" width="500"/>
-</p>
+|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_23.png" width="400"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_24.png" width="400"/>|
+|--|--|--|
 
 ## MultiDataPickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_25.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_25.png" width="300"/>
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_6.md))**
+**Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_6.md))**
