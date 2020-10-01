@@ -83,5 +83,5 @@ new ConfirmDialog(getSupportFragmentManager())
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="300"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
