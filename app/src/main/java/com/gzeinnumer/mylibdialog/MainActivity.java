@@ -21,49 +21,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        _NumberPickerDialog();
 //        _LoadingDialog();
 //        _DatePickerDialogSingleNew();
 //        _DatePickerDialogMultiNew();
 //        _TimePickerDialog();
     }
-
-//    private void _NumberPickerDialog() {
-//        ((Button) findViewById(R.id.btn)).setOnClickListener(new View.OnClickListener() {
-//            @SuppressLint("UseCompatLoadingForDrawables")
-//            @Override
-//            public void onClick(View v) {
-//                new NumberPickerDialog(getSupportFragmentManager())
-//                        .setLastValue(12)
-//                        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_layer))
-//                        .setTitle("ini title")
-//                        .setTitleSize(21)
-//                        .setTitleColor(getResources().getColor(R.color.colorAccent))
-//                        .setTitleAlignment(View.TEXT_ALIGNMENT_INHERIT)
-//                        .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
-//                        .setContent("ini content")
-//                        .setContentSize(21)
-//                        .setContentColor(Color.parseColor("#03DAC5"))
-//                        .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)
-//                        .setBtnOkTitle("Yuhuu")
-//                        .setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))
-//                        .setButtonTextSize(15)
-//                        .setButtonStyle(ButtonStyle.ButtonContained)
-//                        .setOkIconLeft(R.drawable.ic_baseline_add_24)
-//                        .setOkIconTop(R.drawable.ic_baseline_add_24)
-//                        .setOkIconRight(R.drawable.ic_baseline_add_24)
-//                        .setOkIconBottom(R.drawable.ic_baseline_add_24)
-//                        .setButtonGravity(Gravity.CENTER)
-//                        .onOkPressedCallBack(new NumberPickerDialog.OnOkPressed() {
-//                            @Override
-//                            public void onOkPressed(int value) {
-//                                Toast.makeText(MainActivity.this, "Nilai nya " + value, Toast.LENGTH_SHORT).show();
-//                            }
-//                        })
-//                        .show();
-//            }
-//        });
-//    }
 
 //    private void _LoadingDialog() {
 //        ((Button) findViewById(R.id.btn)).setOnClickListener(new View.OnClickListener() {

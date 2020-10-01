@@ -198,3 +198,39 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
 **Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_3.md))**
+
+---
+
+### LoadingDialog
+
+Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan Loading.
+
+**Code** :
+
+```java
+final LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
+        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
+        .setContent("ini content")
+        .setContentSize(21)
+        .setContentColor(Color.parseColor("#03DAC5"))
+        .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+
+loadingDialog.show();
+
+loadingDialog.dismis();
+```
+
+**Preview** :
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_15.png" width="500"/>
+</p>
+
+## LoadingDialog -> Customize
+
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_14.png" width="500"/>
+</p>
+
+Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_4.md))**

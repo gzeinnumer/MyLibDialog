@@ -39,7 +39,20 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
       - dll
 
 
-**3. Button Ok**
+**3. Button Cancel**
+- Mengganti Text Button Cancel
+  - `.setBtnCancelTitle("Batal")`
+- Mengganti warna tulisan Text Button Cancel
+  - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
+- Mengganti Icon Button Cancel
+  - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconTop(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconRight(R.drawable.ic_baseline_add_24)`
+  - `.setCancelIconBottom(R.drawable.ic_baseline_add_24)`
+
+
+**4. Button Ok**
 - Mengganti Text Button Ok
   - `.setBtnOkTitle("Yuhuu")`
 - Mengganti warna tulisan Text Button Ok
@@ -52,7 +65,7 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
   - `.setOkIconBottom(R.drawable.ic_baseline_add_24)`
 
 
-**4. Parent Button**
+**5. Parent Button**
 - Mengganti ukuran Text Button
   - `.setDialogType(DialogType.DialogError)`
     - Value yang bisa dipakai
@@ -75,6 +88,11 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
       - `Gravity.END`
       - `Gravity.START`
       - dll
+
+
+**6. EditText Value**
+- Mengganti ukuran Text Button
+  - `.setLastValue(12)` Kamu bisa memakai ini jika ingin meletakan value sejak awal. jangan gunakan ini jika ingin mulai dari 0.
 
 ##
 
