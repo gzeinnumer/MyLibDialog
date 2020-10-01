@@ -18,7 +18,7 @@ Kamu juga bisa mengganti bentuk dari dialog ke fullscreen.
 
 **Code** :
 ```java
-new SingleDatePickerDialog(getSupportFragmentManager())
+new MultiDataPickerDialog(getSupportFragmentManager())
     .setDialogScreen(DateScreenStyle.FullScreen)
     ...
     .show();
@@ -26,4 +26,4 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/SingleDataPickerDialog/MainActivity.java))
+Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/MultiDataPickerDialog/MainActivity.java))
