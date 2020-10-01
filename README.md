@@ -117,4 +117,4 @@ dialog.show();
 </p>
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
-**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibLogError/blob/master/example/MainActivity.java))**
+**Liat Documentasinya disini ([DOCT](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_1.md))**
