@@ -14,6 +14,7 @@ public class MainActivity extends BaseTesting {
 
     private void MyLibDialog() {
         new MultiDatePickerDialog(getSupportFragmentManager())
+                .setDialogScreen(DateScreenStyle.FullScreen)
                 .setTimeZone("GMT")
                 .setTitle("Pilih tanggal")
                 .setTimeFormat("dd/MM/yyyy")
