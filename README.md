@@ -110,9 +110,8 @@ dialog.show();
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
 
---
-
-### ConfirmDialog -> Customize
+----
+## ConfirmDialog -> Customize
 
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_1.png" width="500"/>
