@@ -63,7 +63,6 @@ dependencies {
 
 ```gradle
 new ConfirmDialog(getSupportFragmentManager())
-        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
         .setTitle("ini title")
         .setTitleSize(21)
         .setContent("ini content")
