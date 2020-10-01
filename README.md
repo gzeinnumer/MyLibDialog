@@ -28,6 +28,8 @@
 
 ### Tech stack and 3rd library
 - Material.io ([docs](https://material.io/develop/android/docs/getting-started))
+- agrawalsuneet/DotLoadersPack-Android ([docs](https://github.com/agrawalsuneet/DotLoadersPack-Android))
+- DialogFragment ([docs](https://developer.android.com/reference/android/app/DialogFragment))
 
 ---
 
@@ -55,6 +57,14 @@ dependencies {
 ```
 
 ---
+
+**Langkah Awal**. Aktifkan `MaterialComponents` di style dengan cara mengganti parent dari `AppTheme` :
+
+```xml
+<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+</style>
+```
 
 ### ConfirmDialog
 
