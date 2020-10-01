@@ -106,11 +106,17 @@ public class ConfirmDialogSetting extends BaseDialog {
         else
             _tvContent.setVisibility(View.GONE);
 
-        if (dBtnCancelValue != null)
+        if (dBtnCancelValue != null) {
             _dBtnCancelMBT.setText(dBtnCancelValue);
+            _dBtnCancelMBO.setText(dBtnCancelValue);
+            _dBtnCancelMBC.setText(dBtnCancelValue);
+        }
 
-        if (dBtnOkValue != null)
+        if (dBtnOkValue != null){
             _dBtnOkMBT.setText(dBtnOkValue);
+            _dBtnOkMBO.setText(dBtnOkValue);
+            _dBtnOkMBC.setText(dBtnOkValue);
+        }
 
         if (btnStyle != null) {
             if (btnStyle == ButtonStyle.ButtonText) {

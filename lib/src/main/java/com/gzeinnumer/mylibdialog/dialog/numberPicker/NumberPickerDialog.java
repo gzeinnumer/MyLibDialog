@@ -95,6 +95,34 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         return this;
     }
 
+    //CANCEL
+    public NumberPickerDialog setBtnCancelTitle(String title) {
+        this.dBtnCancelValue = title;
+        return this;
+    }
+    public NumberPickerDialog setBtnCancelTitleColor(int color) {
+        this.btnTextColorCancel = color;
+        return this;
+    }
+
+    //CANCEL ICON
+    public NumberPickerDialog setCancelIconLeft(int icon) {
+        this.cancelIconL = icon;
+        return this;
+    }
+    public NumberPickerDialog setCancelIconTop(int icon) {
+        this.cancelIconT = icon;
+        return this;
+    }
+    public NumberPickerDialog setCancelIconRight(int icon) {
+        this.cancelIconR = icon;
+        return this;
+    }
+    public NumberPickerDialog setCancelIconBottom(int icon) {
+        this.cancelIconB = icon;
+        return this;
+    }
+
     //BUTTON STYLE
     public NumberPickerDialog setButtonStyle(ButtonStyle style) {
         this.btnStyle = style;

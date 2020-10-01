@@ -118,8 +118,11 @@ public class InfoDialogSetting extends BaseDialog {
         else
             _tvContent.setVisibility(View.GONE);
 
-        if (dBtnOkValue != null)
+        if (dBtnOkValue != null){
             _dBtnOkMBT.setText(dBtnOkValue);
+            _dBtnOkMBO.setText(dBtnOkValue);
+            _dBtnOkMBC.setText(dBtnOkValue);
+        }
 
         if (btnStyle != null) {
             if (btnStyle == ButtonStyle.ButtonText) {
