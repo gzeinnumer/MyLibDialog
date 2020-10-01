@@ -1,6 +1,7 @@
 package com.gzeinnumer.mylibdialog;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -28,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        _ConfirmDialog();
-//        _InfoDialog();
-//        _NumberPickerDialog();
-//        _LoadingDialog();
-//        _DatePickerDialogSingleNew();
-//        _DatePickerDialogMultiNew();
+        _ConfirmDialog();
+        _InfoDialog();
+        _NumberPickerDialog();
+        _LoadingDialog();
+        _DatePickerDialogSingleNew();
+        _DatePickerDialogMultiNew();
         _TimePickerDialog();
     }
 
@@ -42,31 +43,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new ConfirmDialog(getSupportFragmentManager())
-//                        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
+                        .setDialogCanvas(getResources().getDrawable(R.drawable.rounded_corner_2))
                         .setTitle("ini title")
-//                        .setTitleSize(21)
-//                        .setTitleColor(getResources().getColor(R.color.colorAccent))
-//                        .setTitleColor(getResources().getColor(R.color.colorAccent))
-//                        .setTitleAlignment(View.TEXT_ALIGNMENT_INHERIT)
+                        .setTitleSize(21)
+                        .setTitleColor(getResources().getColor(R.color.colorAccent))
+                        .setTitleColor(getResources().getColor(R.color.colorAccent))
+                        .setTitleAlignment(View.TEXT_ALIGNMENT_INHERIT)
                         .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
                         .setContent("ini content")
-//                        .setContentSize(21)
-//                        .setContentColor(Color.parseColor("#03DAC5"))
+                        .setContentSize(21)
+                        .setContentColor(Color.parseColor("#03DAC5"))
                         .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)
                         .setBtnCancelTitle("Batal")
-//                        .setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))
+                        .setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))
                         .setBtnOkTitle("Yuhuu")
-//                        .setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))
-//                        .setButtonTextSize(15)
+                        .setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))
+                        .setButtonTextSize(15)
                         .setButtonStyle(ButtonStyle.ButtonText)
-//                        .setOkIconLeft(R.drawable.ic_baseline_add_24)
-//                        .setCancelIconLeft(R.drawable.ic_baseline_add_24)
-//                        .setOkIconTop(R.drawable.ic_baseline_add_24)
-//                        .setCancelIconTop(R.drawable.ic_baseline_add_24)
-//                        .setOkIconRight(R.drawable.ic_baseline_add_24)
-//                        .setCancelIconRight(R.drawable.ic_baseline_add_24)
-//                        .setOkIconBottom(R.drawable.ic_baseline_add_24)
-//                        .setCancelIconBottom(R.drawable.ic_baseline_add_24)
+                        .setOkIconLeft(R.drawable.ic_baseline_add_24)
+                        .setCancelIconLeft(R.drawable.ic_baseline_add_24)
+                        .setOkIconTop(R.drawable.ic_baseline_add_24)
+                        .setCancelIconTop(R.drawable.ic_baseline_add_24)
+                        .setOkIconRight(R.drawable.ic_baseline_add_24)
+                        .setCancelIconRight(R.drawable.ic_baseline_add_24)
+                        .setOkIconBottom(R.drawable.ic_baseline_add_24)
+                        .setCancelIconBottom(R.drawable.ic_baseline_add_24)
                         .setButtonGravity(Gravity.CENTER)
                         .onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
                             @Override
