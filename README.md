@@ -265,7 +265,11 @@ new SingleDatePickerDialog(getSupportFragmentManager())
     .build()
     .show();
 ```
-- Secara default
+
+- Kamu tidak harus menggunakan `setTimeZone()` karna sudah ada nilai defaultnya Yaitu GMT.
+- Kamu tidak harus menggunakan `setTimeFormat()` karna sudah ada nilai defaultnya yaitu = "dd-MM-yyyy".
+- Kamu tidak harus menggunakan `setStartDate()` jika tidak mau membatasi kelendernya. pastikan polanya sama dengan setTimeFormat ya.
+- Kamu tidak harus menggunakan `setEndDate()` jika tidak mau membatasi kelendernya. pastikan polanya sama dengan setTimeFormat ya.
 
 Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 
@@ -310,6 +314,12 @@ new MultiDatePickerDialog(getSupportFragmentManager())
     .build()
     .show();
 ```
+
+- Kamu tidak harus menggunakan `setTimeZone()` karna sudah ada nilai defaultnya Yaitu GMT.
+- Kamu tidak harus menggunakan `setTimeFormat()` karna sudah ada nilai defaultnya yaitu = "dd-MM-yyyy".
+- Kamu tidak harus menggunakan `setStartDate()` jika tidak mau membatasi kelendernya. pastikan polanya sama dengan setTimeFormat ya.
+- Kamu tidak harus menggunakan `setEndDate()` jika tidak mau membatasi kelendernya. pastikan polanya sama dengan setTimeFormat ya.
+
 
 Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
 

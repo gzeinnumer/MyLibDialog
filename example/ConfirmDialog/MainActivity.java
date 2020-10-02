@@ -9,7 +9,7 @@ import android.widget.Toast;
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
-public class MainActivity extends BaseTesting {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

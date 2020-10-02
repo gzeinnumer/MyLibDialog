@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 
-public class MainActivity extends BaseTesting {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

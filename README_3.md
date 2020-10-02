@@ -117,6 +117,11 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 </shape>
 ```
+Contoh lainnya:
+- Semua radiusnya sama  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml))
+- Radius berbeda-beda  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml))
+- Dialog tampak 3D  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml))
+- Shadow dialog  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml))
 
 **Code** :
 ```java
