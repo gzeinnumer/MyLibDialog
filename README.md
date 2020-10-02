@@ -339,3 +339,9 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 
 Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
 **Liat Documentasinya disini ([DOCS](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_6.md))**
+
+---
+
+```
+Copyright 2020 M. Fadli Zein
+```
