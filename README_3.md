@@ -4,99 +4,88 @@
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_13.png"/>
 </p>
 
-Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+You can change UI with this configuration.
 
 **1. Title**
-- Mengganti Text Title
+- Change Text Title
   - `.setTitle("ini title")`
-- Mengganti ukuran Text Title
+- Change Text Title Size
   - `.setTitleSize(21)`
-- Mengganti warna tulisan Text Title
+- Change Text Title Color
   - `.setTitleColor(getResources().getColor(R.color.colorAccent))`
   - `.setTitleColor(Color.parseColor("#03DAC5"))`
-- Mengganti alignment dari Text Title
-  - .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
-    - Value yang bisa dipakai
+- Change Text Title Alignment
+  - `.setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)`
+    - Available Value :
       - `View.TEXT_ALIGNMENT_TEXT_END`
       - `View.TEXT_ALIGNMENT_CENTER`
       - `View.TEXT_ALIGNMENT_TEXT_START`
-      - dll
+      - etc.
 
 **2. Content**
-- Mengganti Text Content
+- Change Text Content
   - `.setContent("ini content")`
-- Mengganti ukuran Text Content
+- Change Text Content Size
   - `.setContentSize(21)`
-- Mengganti warna tulisan Text Content
+- Change Text Content Color
   - `.setContentColor(getResources().getColor(R.color.colorAccent))`
   - `.setContentColor(Color.parseColor("#03DAC5"))`
-- Mengganti alignment dari Text Content
-  - .setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)
-    - Value yang bisa dipakai
+- Change Text Content Alignment
+  - `.setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)`
+    - Available Value :
       - `View.TEXT_ALIGNMENT_TEXT_END`
       - `View.TEXT_ALIGNMENT_CENTER`
       - `View.TEXT_ALIGNMENT_TEXT_START`
-      - dll
-
+      - etc.
 
 **3. Button Cancel**
-- Mengganti Text Button Cancel
+- Change Text Button Cancel
   - `.setBtnCancelTitle("Batal")`
-- Mengganti warna tulisan Text Button Cancel
+- Change Text Button Cancel Color
   - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))`
   - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
-- Mengganti Icon Button Cancel
+- Change Icon Button Cancel
   - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
   - `.setCancelIconTop(R.drawable.ic_baseline_add_24)`
   - `.setCancelIconRight(R.drawable.ic_baseline_add_24)`
   - `.setCancelIconBottom(R.drawable.ic_baseline_add_24)`
 
-
 **4. Button Ok**
-- Mengganti Text Button Ok
+- Change Text Button Ok
   - `.setBtnOkTitle("Yuhuu")`
-- Mengganti warna tulisan Text Button Ok
+- Change Text Button Ok Color
   - `.setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))`
   - `.setBtnOkTitleColor(Color.parseColor("#03DAC5"))`
-- Mengganti Icon Button Ok
+- Change Icon Button Ok
   - `.setOkIconLeft(R.drawable.ic_baseline_add_24)`
   - `.setOkIconTop(R.drawable.ic_baseline_add_24)`
   - `.setOkIconRight(R.drawable.ic_baseline_add_24)`
   - `.setOkIconBottom(R.drawable.ic_baseline_add_24)`
 
-
 **5. Parent Button**
-- Mengganti ukuran Text Button
-  - `.setDialogType(DialogType.DialogError)`
-    - Value yang bisa dipakai
-      - `DialogType.DialogError` -> RED
-      - `DialogType.DialogSuccess` -> GREEN
-      - `DialogType.DialogWarning` -> YELLOW
-      - dll
-- Mengganti ukuran Text Button
+- Change Text Button Size
   - `.setButtonTextSize(21)`
-- Mengganti style Button
+- Change Style Button
   - `.setButtonStyle(ButtonStyle.ButtonContained)`
-    - Value yang bisa dipakai
+    - Available Value :
       - `ButtonStyle.ButtonContained`
       - `ButtonStyle.ButtonOutlined`
       - `ButtonStyle.ButtonText`
-- Mengganti Gravity Parent Button
+- Change Gravity Parent Button
   - `.setButtonGravity(Gravity.CENTER)`
-    - Value yang bisa dipakai
+    - Available Value :
       - `Gravity.CENTER`
       - `Gravity.END`
       - `Gravity.START`
-      - dll
-
+      - etc.
 
 **6. EditText Value**
-- Mengganti ukuran Text Button
-  - `.setLastValue(12)` Kamu bisa memakai ini jika ingin meletakan value sejak awal. jangan gunakan ini jika ingin mulai dari 0.
+- Change Text Button Size
+  - `.setLastValue(12)` optional. default value is 0.
 
 ##
 
-**Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
+**Look At Orange Arrow.** you can set shape/canvas from `drawable` to `dialog` with `shape.xml`->`<shape></shape>`. in my example i am using `rounded_corner_2.xml`.
 
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_11.png" width="500"/>
@@ -117,11 +106,11 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 </shape>
 ```
-Contoh lainnya:
-- Semua radiusnya sama  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml))
-- Radius berbeda-beda  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml))
-- Dialog tampak 3D  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml))
-- Shadow dialog  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml))
+Other Example:
+- Same Radius  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml))
+- Different Radius ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml))
+- Dialog 3D  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml))
+- Shadow Dialog  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml))
 
 **Code** :
 ```java
@@ -133,7 +122,7 @@ new NumberPickerDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/NumberPickerDialog/MainActivity.java))
+[FullCode](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/NumberPickerDialog/MainActivity.java)
 
 **Preview** :
 

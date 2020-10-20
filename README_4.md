@@ -4,27 +4,27 @@
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_14.png"/>
 </p>
 
-Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+You can change UI with this configuration.
 
 **1. Title**
-- Mengganti Text Title
+- Change Text Title
   - `.setTitle("ini title")`
-- Mengganti ukuran Text Title
+- Change Text Title Size
   - `.setTitleSize(21)`
-- Mengganti warna tulisan Text Title
+- Change Text Title Color
   - `.setTitleColor(getResources().getColor(R.color.colorAccent))`
   - `.setTitleColor(Color.parseColor("#03DAC5"))`
-- Mengganti alignment dari Text Title
-  - .setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)
-    - Value yang bisa dipakai
+- Change Text Title Alignment
+  - `.setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)`
+    - Available Value :
       - `View.TEXT_ALIGNMENT_TEXT_END`
       - `View.TEXT_ALIGNMENT_CENTER`
       - `View.TEXT_ALIGNMENT_TEXT_START`
-      - dll
+      - etc.
 
 ##
 
-**Perhatikan Panah Orange.** kamu juga bisa mengganti bentuk dari dialog dengan file yang kamu buat di `drawable` menggunakan `shape.xml`->`<shape></shape>`. Zein akan mencontohkan dengan 1 file `rounded_corner_2.xml`.
+**Look At Orange Arrow.** you can set shape/canvas from `drawable` to `dialog` with `shape.xml`->`<shape></shape>`. in my example i am using `rounded_corner_2.xml`.
 
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_16.png" width="500"/>
@@ -45,11 +45,11 @@ Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa s
 
 </shape>
 ```
-Contoh lainnya:
-- Semua radiusnya sama  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml))
-- Radius berbeda-beda  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml))
-- Dialog tampak 3D  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml))
-- Shadow dialog  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml))
+Other Example:
+- Same Radius  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml))
+- Different Radius ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml))
+- Dialog 3D  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml))
+- Shadow Dialog  ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml))
 
 **Code** :
 ```java
@@ -61,7 +61,7 @@ new LoadingDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/LoadingDialog/MainActivity.java))
+[FullCode](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/LoadingDialog/MainActivity.java)
 
 **Preview** :
 

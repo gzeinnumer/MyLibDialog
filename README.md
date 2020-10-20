@@ -1,5 +1,3 @@
-# MyLibDialog
-
 <p align="center">
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
@@ -213,7 +211,7 @@ Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan
 **Code** :
 
 ```java
-final LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
+LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
     .setContent("ini content");
 
 loadingDialog.show();

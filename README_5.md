@@ -4,17 +4,17 @@
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_21.png"  width="300"/>
 </p>
 
-Pada bagian diatas, kamu bisa mencustom sendiri UI-nya. berikut adalah apa apa saja yang bisa kamu custom disini:
+You can change UI with this configuration.
 
 **Screen Dialog**
 - `.setDialogScreen(DateScreenStyle.FullScreen)`
-  - Value yang bisa dipakai
+  - Available Value :
     - `DateScreenStyle.FullScreen`
     - `DateScreenStyle.Dialog`
 
 ##
 
-Kamu juga bisa mengganti bentuk dari dialog ke fullscreen.
+You can change from dialog to fullscreen with this code :
 
 **Code** :
 ```java
@@ -26,4 +26,5 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/SingleDataPickerDialog/MainActivity.java))
+[FullCode](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/SingleDataPickerDialog/MainActivity.java)
+
