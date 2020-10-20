@@ -68,8 +68,8 @@ public class InfoDialogSetting extends BaseDialog {
         _dBtnOkMBO = _view.findViewById(R.id.d_btn_ok_MBO);
         _dBtnOkMBC = _view.findViewById(R.id.d_btn_ok_MBC);
 
-        getDialog().setCancelable(true);
-        getDialog().setCanceledOnTouchOutside(true);
+        getDialog().setCancelable(false);
+        getDialog().setCanceledOnTouchOutside(false);
     }
 
     @Override
