@@ -1,29 +1,23 @@
-## SingleDatePickerDialog -> Customize
+#### Same Radius
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_25.png"  width="300"/>
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_26.png" width="500"/>
 </p>
 
-You can change UI with this configuration.
+#### Different Radius
 
-**Screen Dialog**
-- `.setDialogScreen(DateScreenStyle.FullScreen)`
-  - Available Value :
-    - `DateScreenStyle.FullScreen`
-    - `DateScreenStyle.Dialog`
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_27.png" width="500"/>
+</p>
 
-##
+#### Dialog 3D
 
-You can change from dialog to fullscreen with this code :
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_28.png" width="500"/>
+</p>
 
-**Code** :
-```java
-new MultiDataPickerDialog(getSupportFragmentManager())
-    .setDialogScreen(DateScreenStyle.FullScreen)
-    ...
-    .show();
-```
+#### Shadow Dialog
 
-##
-
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/MultiDataPickerDialog/MainActivity.java))
+<p align="center">
+  <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_29.png" width="500"/>
+</p>
