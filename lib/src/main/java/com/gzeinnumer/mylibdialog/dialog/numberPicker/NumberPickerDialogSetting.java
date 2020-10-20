@@ -195,7 +195,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onCancelPressed!=null)
+                if (onCancelPressed != null)
                     onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
@@ -203,7 +203,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed!=null)
+                if (onOkPressed != null)
                     onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }
@@ -212,7 +212,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onCancelPressed!=null)
+                if (onCancelPressed != null)
                     onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
@@ -220,7 +220,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed!=null)
+                if (onOkPressed != null)
                     onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }
@@ -229,7 +229,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onCancelPressed!=null)
+                if (onCancelPressed != null)
                     onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
@@ -237,7 +237,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed!=null)
+                if (onOkPressed != null)
                     onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }

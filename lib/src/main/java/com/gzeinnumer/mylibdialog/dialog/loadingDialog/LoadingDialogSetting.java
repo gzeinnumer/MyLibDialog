@@ -48,7 +48,6 @@ public class LoadingDialogSetting extends BaseDialog {
     }
 
     private void initDesign() {
-
         if (shapeCanvas!=null)
             _dialogCanvas.setBackground(shapeCanvas);
 
