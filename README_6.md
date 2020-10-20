@@ -26,4 +26,4 @@ new MultiDataPickerDialog(getSupportFragmentManager())
 
 ##
 
-Jika semua kode dipakai, maka akan tampak seperti ini ([example](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/MultiDataPickerDialog/MainActivity.java))
+[FullCode](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/MultiDataPickerDialog/MainActivity.java)
