@@ -31,9 +31,6 @@ public class LoadingDialogSetting extends BaseDialog {
         _dialogCanvas = _view.findViewById(R.id.dialog_canvas);
         _dialogCanvasContent = _view.findViewById(R.id.dialog_canvas_content);
         _tvContent = _view.findViewById(R.id.tv_content);
-
-        getDialog().setCancelable(false);
-        getDialog().setCanceledOnTouchOutside(false);
     }
 
     @Override

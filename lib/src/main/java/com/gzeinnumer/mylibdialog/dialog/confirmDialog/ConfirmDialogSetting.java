@@ -76,9 +76,6 @@ public class ConfirmDialogSetting extends BaseDialog {
         _dBtnOkMBT = _view.findViewById(R.id.d_btn_ok_MBT);
         _dBtnOkMBO = _view.findViewById(R.id.d_btn_ok_MBO);
         _dBtnOkMBC = _view.findViewById(R.id.d_btn_ok_MBC);
-
-        getDialog().setCancelable(false);
-        getDialog().setCanceledOnTouchOutside(false);
     }
 
     @Override

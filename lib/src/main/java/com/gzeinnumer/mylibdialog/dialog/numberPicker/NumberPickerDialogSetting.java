@@ -85,9 +85,6 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _edNumber = _view.findViewById(R.id.ed_number);
         _btnSubtract = _view.findViewById(R.id.btn_subtract);
         _btnAdd = _view.findViewById(R.id.btn_add);
-
-        getDialog().setCancelable(false);
-        getDialog().setCanceledOnTouchOutside(false);
     }
 
     @Override

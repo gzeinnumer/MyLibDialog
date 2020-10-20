@@ -26,6 +26,10 @@ public abstract class BaseDialog extends DialogFragment {
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        getDialog().setCancelable(false);
+        getDialog().setCanceledOnTouchOutside(false);
+
         boolean isFullScreen = false;
         if (isFullScreen) {
             getDialog().getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
