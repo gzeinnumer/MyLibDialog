@@ -180,21 +180,24 @@ public class InfoDialogSetting extends BaseDialog {
         _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed();
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed();
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed();
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed();
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed();
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed();
                 getDialog().dismiss();
             }
         });

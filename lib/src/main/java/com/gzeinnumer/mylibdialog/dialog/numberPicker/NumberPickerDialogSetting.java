@@ -195,14 +195,16 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onCancelPressed.onCancelPressed();
+                if (onCancelPressed!=null)
+                    onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed(lastValue);
+                if (onOkPressed!=null)
+                    onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }
         });
@@ -210,14 +212,16 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onCancelPressed.onCancelPressed();
+                if (onCancelPressed!=null)
+                    onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed(lastValue);
+                if (onOkPressed!=null)
+                    onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }
         });
@@ -225,14 +229,16 @@ public class NumberPickerDialogSetting extends BaseDialog {
         _dBtnCancelMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onCancelPressed.onCancelPressed();
+                if (onCancelPressed!=null)
+                    onCancelPressed.onCancelPressed();
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onOkPressed.onOkPressed(lastValue);
+                if (onOkPressed!=null)
+                    onOkPressed.onOkPressed(lastValue);
                 getDialog().dismiss();
             }
         });
