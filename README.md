@@ -185,6 +185,12 @@ new NumberPickerDialog(getSupportFragmentManager())
             Toast.makeText(MainActivity.this, "Nilai nya " + value, Toast.LENGTH_SHORT).show();
         }
     })
+    .onCancelPressedCallBack(new NumberPickerDialog.OnCancelPressed() {
+        @Override
+        public void onCancelPressed() {
+            Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
+        }
+    })
     .show();
 ```
 
