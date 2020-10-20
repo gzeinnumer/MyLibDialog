@@ -107,10 +107,10 @@ You can change UI with this configuration.
 </shape>
 ```
 Other Example:
-- Same Radius ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml)) ([Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#same-radius))
-- Different Radius ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml)) ([Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#different-radius))
-- Dialog 3D ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml)) ([Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#dialog-3d))
-- Shadow Dialog ([Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml)) ([Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#shadow-dialog))
+- Same Radius -> `R.drawable.rounded_corner` [Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#same-radius)
+- Different Radius -> `R.drawable.rounded_corner_2` [Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_corner_2.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#different-radius)
+- Dialog 3D -> `R.drawable.rounded_layer` [Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/rounded_layer.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#dialog-3d)
+- Shadow Dialog -> `R.drawable.dialog_shadow` [Shape](https://github.com/gzeinnumer/MyLibDialog/blob/main/example/Shapes/dialog_shadow.xml) [Preview](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_SHAPE.md#shadow-dialog)
 
 **Code** :
 ```java
