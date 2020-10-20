@@ -1,5 +1,6 @@
 package com.gzeinnumer.mylibdialog.dialog;
 
+import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.DialogFragment;
@@ -26,6 +28,8 @@ public abstract class BaseDialog extends DialogFragment {
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+//        this.setCancelable(false);
 
         getDialog().setCancelable(false);
         getDialog().setCanceledOnTouchOutside(false);
@@ -48,5 +52,16 @@ public abstract class BaseDialog extends DialogFragment {
         getDialog().setCancelable(false);
         getDialog().setCanceledOnTouchOutside(false);
         return inflater.inflate(contentView(), container, false);
+    }
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+        return new Dialog(getActivity(),getTheme()){
+            @Override
+            public void onBackPressed() {
+
+            }
+        };
     }
 }
