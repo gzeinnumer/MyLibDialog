@@ -39,7 +39,7 @@
 Minimum Android SDK Version 21
 
 #### Gradle
-**Step 1.** tambahkan maven jitpack.io ke build.gradle (Project) :
+**Step 1.** add maven `jitpack.io` to your `build.gradle` (Project) :
 ```gradle
 allprojects {
   repositories {
@@ -50,7 +50,7 @@ allprojects {
 }
 ```
 
-**Step 2.** tambahkan depedensi ke build.gradle (Module) :
+**Step 2.** add dependensi to your `build.gradle` (Module) :
 ```gradle
 dependencies {
   implementation 'com.github.gzeinnumer:MyLibDialog:versi'
@@ -59,7 +59,7 @@ dependencies {
 
 ---
 
-**Langkah Awal**. Aktifkan `MaterialComponents` di style dengan cara mengganti parent dari `AppTheme` :
+**First Step Awal**. Use `MaterialComponents` in your style :
 
 ```xml
 <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
