@@ -54,6 +54,7 @@ allprojects {
 ```gradle
 dependencies {
   implementation 'com.github.gzeinnumer:MyLibDialog:versi'
+  implementation 'com.google.android.material:material:1.2.0'
 }
 ```
 
