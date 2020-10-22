@@ -60,7 +60,7 @@ dependencies {
 
 ---
 
-**First Step Awal**. Use `MaterialComponents` in your style :
+**First Step**. Use `MaterialComponents` in your style :
 
 ```xml
 <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
