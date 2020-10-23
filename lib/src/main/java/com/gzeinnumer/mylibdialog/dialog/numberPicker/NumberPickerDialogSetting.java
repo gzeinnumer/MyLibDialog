@@ -22,6 +22,8 @@ public class NumberPickerDialogSetting extends BaseDialog {
 
     protected NumberPickerDialog.OnOkPressed onOkPressed;
 
+    protected int buttonColor = 0;
+
     private View _view;
     private LinearLayout _dialogCanvas;
     private LinearLayout _dialogCanvasContent;
@@ -187,6 +189,11 @@ public class NumberPickerDialogSetting extends BaseDialog {
 
         if(tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START){
             _tvContent.setTextAlignment(tvContentAlignment);
+        }
+
+        if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
+            _dBtnCancelMBC.setBackgroundColor(getResources().getColor(buttonColor));
+            _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
         }
     }
 

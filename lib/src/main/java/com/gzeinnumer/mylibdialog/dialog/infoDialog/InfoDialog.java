@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 import com.gzeinnumer.mylibdialog.constant.DialogType;
+import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
 public class InfoDialog extends InfoDialogSetting {
 
@@ -111,6 +112,10 @@ public class InfoDialog extends InfoDialogSetting {
     }
     public InfoDialog setDialogType(DialogType dialogType) {
         this.dialogType = dialogType;
+        return this;
+    }
+    public InfoDialog setButtonColor(int color) {
+        this.buttonColor = color;
         return this;
     }
 

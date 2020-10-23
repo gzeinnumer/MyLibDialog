@@ -136,6 +136,10 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         this.buttonGravity = gravity;
         return this;
     }
+    public ConfirmDialog setButtonColor(int color) {
+        this.buttonColor = color;
+        return this;
+    }
 
     //ACTION CALLBACK
     public ConfirmDialog onCancelPressedCallBack(OnCancelPressed callBack) {

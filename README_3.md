@@ -78,6 +78,8 @@ You can change UI with this configuration.
       - `Gravity.END`
       - `Gravity.START`
       - etc.
+- Change Button Background Color
+  - `.setButtonColor(R.color.amber_200)` you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
 
 **6. EditText Value**
 - Change Text Button Size

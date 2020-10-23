@@ -136,6 +136,10 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         this.buttonGravity = gravity;
         return this;
     }
+    public NumberPickerDialog setButtonColor(int color) {
+        this.buttonColor = color;
+        return this;
+    }
 
     //ACTION CALLBACK
     public NumberPickerDialog onCancelPressedCallBack(OnCancelPressed callBack) {
