@@ -34,6 +34,7 @@ dependencies {
   ...
   implementation 'com.github.gzeinnumer:MyLibDialog:version'
 }
+```
 
 ## Feature List
 - [x] [ConfirmDialog](#confirmdialog)
@@ -60,6 +61,8 @@ dependencies {
 ```
 
 ---
+
+##USE
 
 ### ConfirmDialog
 Dialog with **1 Title, 1 Content, 1 Negative Button, 1 Positive Button**.
