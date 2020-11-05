@@ -48,7 +48,6 @@ dependencies {
 - Material.io ([docs](https://material.io/develop/android/docs/getting-started))
 - agrawalsuneet/DotLoadersPack-Android ([docs](https://github.com/agrawalsuneet/DotLoadersPack-Android))
 - DialogFragment ([docs](https://developer.android.com/reference/android/app/DialogFragment))
-```
 
 ---
 
@@ -62,7 +61,7 @@ dependencies {
 
 ---
 
-##USE
+## USE
 
 ### ConfirmDialog
 Dialog with **1 Title, 1 Content, 1 Negative Button, 1 Positive Button**.
@@ -210,7 +209,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 
 ### LoadingDialog
 
-Dialog yang berisi **1 Title, 1 Animasi** yang bisa kamu pakai untuk menampilkan Loading.
+Dialog with **1 Title, 1 Animation Loading** that you can use.
 
 **Code** :
 
@@ -242,7 +241,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 
 ### SingleDatePickerDialog
 
-Dialog yang berisi **Calender yang sama dengan material.io** yang bisa kamu pakai untuk megambil tanggal.
+Dialog with **Calender like in material.io** that you can use to pick date.
 
 **Code** :
 
@@ -269,7 +268,7 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 - `setStartDate()` optional.
 - `setEndDate()` optional.
 
-Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()` dan action callbacknya seperti contoh `ConfirmDialog`.
+or you can write it like this.
 
 **Preview** :
 
