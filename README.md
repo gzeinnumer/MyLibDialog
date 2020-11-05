@@ -241,7 +241,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 
 ### SingleDatePickerDialog
 
-Dialog with **Calender like in material.io** that you can use to pick date.
+Dialog with **Calender like in material.io** that you can use to pick `single` date.
 
 **Code** :
 
@@ -291,7 +291,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 
 ### MultiDatePickerDialog
 
-Dialog yang berisi **Calender yang sama dengan material.io** yang bisa kamu pakai untuk megambil tanggal dengan range yang kamu pilih.
+Dialog with **Calender like in material.io** that you can use to pick date with range.
 
 **Code** :
 
