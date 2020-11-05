@@ -33,6 +33,7 @@ allprojects {
 dependencies {
   ...
   implementation 'com.github.gzeinnumer:MyLibDialog:version'
+  implementation 'com.google.android.material:material:1.2.1'
 }
 ```
 
