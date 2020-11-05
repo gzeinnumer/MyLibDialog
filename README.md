@@ -18,7 +18,24 @@
 
 ---
 
-### Feature List
+## Download
+Add maven `jitpack.io` and `dependencies` in `build.gradle (Project)` :
+```gradle
+// build.gradle project
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+
+// build.gradle app/module
+dependencies {
+  ...
+  implementation 'com.github.gzeinnumer:MyLibDialog:version'
+}
+
+## Feature List
 - [x] [ConfirmDialog](#confirmdialog)
 - [x] [InfoDialog](#infodialog)
 - [x] [NumberPickerDialog](#numberpickerdialog)
@@ -26,36 +43,10 @@
 - [x] [SingleDatePickerDialog](#singledatepickerdialog)
 - [x] [MultiDatePickerDialog](#multidatepickerdialog)
 
----
-
-### Tech stack and 3rd library
+## Tech stack and 3rd library
 - Material.io ([docs](https://material.io/develop/android/docs/getting-started))
 - agrawalsuneet/DotLoadersPack-Android ([docs](https://github.com/agrawalsuneet/DotLoadersPack-Android))
 - DialogFragment ([docs](https://developer.android.com/reference/android/app/DialogFragment))
-
----
-
-## Download
-Minimum Android SDK Version 21
-
-#### Gradle
-**Step 1.** add maven `jitpack.io` to your `build.gradle` (Project) :
-```gradle
-allprojects {
-  repositories {
-    google()
-    jcenter()
-    maven { url 'https://jitpack.io' }
-  }
-}
-```
-
-**Step 2.** add dependensi to your `build.gradle` (Module) :
-```gradle
-dependencies {
-  implementation 'com.github.gzeinnumer:MyLibDialog:versi'
-  implementation 'com.google.android.material:material:1.2.0'
-}
 ```
 
 ---
@@ -124,6 +115,7 @@ dialog.show();
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_3.png" width="500"/>
 </p>
 
+#
 #### ConfirmDialog -> Customize
 
 <p align="center">
@@ -159,6 +151,7 @@ new InfoDialog(getSupportFragmentManager())
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_6.png" width="500"/>
 </p>
 
+#
 #### InfoDialog -> Customize
 
 <p align="center">
@@ -201,6 +194,7 @@ new NumberPickerDialog(getSupportFragmentManager())
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_10.png" width="500"/>
 </p>
 
+#
 #### NumberPickerDialog -> Customize
 
 <p align="center">
@@ -232,6 +226,7 @@ loadingDialog.dismis();
   <img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_15.png" width="500"/>
 </p>
 
+#
 #### LoadingDialog -> Customize
 
 <p align="center">
@@ -281,6 +276,7 @@ Bisa lansung dipanggil seperti diatas, atau kamu bisa memisahkan bagian `show()`
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_20.png" width="400"/>|
 |--|
 
+#
 #### SingleDatePickerDialog -> Customize
 
 <p align="center">
@@ -327,6 +323,7 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_24.png" width="400"/>|
 |--|
 
+#
 #### MultiDataPickerDialog -> Customize
 
 <p align="center">
