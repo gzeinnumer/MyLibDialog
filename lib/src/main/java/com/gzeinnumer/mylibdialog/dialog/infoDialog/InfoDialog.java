@@ -27,6 +27,11 @@ public class InfoDialog extends InfoDialogSetting {
         }
     }
 
+    public InfoDialog setAnimationStyle(int animationStyle) {
+        this.animationStyle = animationStyle;
+        return this;
+    }
+
     //CANVAS
     public InfoDialog setDialogCanvas(Drawable resource) {
         this.shapeCanvas = resource;

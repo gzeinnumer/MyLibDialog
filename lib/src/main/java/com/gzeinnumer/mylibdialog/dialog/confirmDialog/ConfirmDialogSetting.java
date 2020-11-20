@@ -21,7 +21,6 @@ public class ConfirmDialogSetting extends BaseDialog {
 
     protected ConfirmDialog.OnOkPressed onOkPressed;
 
-
     protected int buttonColor = 0;
     private View _view;
     private LinearLayout _dialogCanvas;

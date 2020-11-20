@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
+import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
 public class NumberPickerDialog extends NumberPickerDialogSetting {
 
@@ -23,6 +24,11 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         if (previous != null) {
             _transaction.remove(previous);
         }
+    }
+
+    public NumberPickerDialog setAnimationStyle(int animationStyle) {
+        this.animationStyle = animationStyle;
+        return this;
     }
 
     //CANVAS
