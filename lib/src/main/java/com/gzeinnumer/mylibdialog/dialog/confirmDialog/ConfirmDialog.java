@@ -25,6 +25,11 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         }
     }
 
+    public ConfirmDialog setAnimationStyle(int animationStyle) {
+        this.animationStyle = animationStyle;
+        return this;
+    }
+
     //CANVAS
     public ConfirmDialog setDialogCanvas(Drawable resource) {
         this.shapeCanvas = resource;

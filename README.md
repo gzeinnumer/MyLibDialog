@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.0.5-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.0.6-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
@@ -334,6 +334,19 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 </p>
 
 You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_6.md).
+
+---
+
+### Version
+- **1.0.5**
+  - First Release
+- **1.0.6**
+  - Add Custom Animation
+
+---
+
+### Contribution
+You can sent your constibution to `branche` `open-pull`.
 
 ---
 

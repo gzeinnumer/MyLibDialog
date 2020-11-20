@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
+
 public class LoadingDialog extends LoadingDialogSetting {
 
     public static final String TAG = "CustomDialog";
@@ -21,6 +23,11 @@ public class LoadingDialog extends LoadingDialogSetting {
         if (previous != null) {
             _transaction.remove(previous);
         }
+    }
+
+    public LoadingDialog setAnimationStyle(int animationStyle) {
+        this.animationStyle = animationStyle;
+        return this;
     }
 
     //CANVAS

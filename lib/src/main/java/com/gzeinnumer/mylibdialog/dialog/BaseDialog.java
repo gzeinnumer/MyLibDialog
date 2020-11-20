@@ -18,18 +18,18 @@ import com.gzeinnumer.mylibdialog.R;
 
 public abstract class BaseDialog extends DialogFragment {
 
+    protected int animationStyle = R.style.DialogStyle;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.DialogStyle);
+        setStyle(DialogFragment.STYLE_NO_TITLE, animationStyle);
     }
 
     @Override
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-//        this.setCancelable(false);
 
         getDialog().setCancelable(false);
         getDialog().setCanceledOnTouchOutside(false);
