@@ -18,7 +18,7 @@ import com.gzeinnumer.mylibdialog.R;
 
 public abstract class BaseDialog extends DialogFragment {
 
-    protected int animationStyle = R.style.DialogStyle;
+    protected int animationStyle = R.style.DialogStyle_In;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
