@@ -27,6 +27,12 @@ public abstract class BaseDialog extends DialogFragment {
     }
 
     @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getDialog().getWindow().getAttributes().windowAnimations = animationStyle;
+    }
+
+    @Override
     public void onStart() {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
