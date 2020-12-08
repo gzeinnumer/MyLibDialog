@@ -22,6 +22,7 @@ public class ConfirmDialogSetting extends BaseDialog {
     protected ConfirmDialog.OnOkPressed onOkPressed;
 
     protected int buttonColor = 0;
+    protected boolean buttonAllCaps = true;
     private View _view;
     private LinearLayout _dialogCanvas;
     private LinearLayout _dialogCanvasContent;
@@ -185,6 +186,15 @@ public class ConfirmDialogSetting extends BaseDialog {
         if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
             _dBtnCancelMBC.setBackgroundColor(getResources().getColor(buttonColor));
             _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
+        }
+
+        if (!buttonAllCaps){
+            _dBtnCancelMBT.setAllCaps(false);
+            _dBtnCancelMBO.setAllCaps(false);
+            _dBtnCancelMBC.setAllCaps(false);
+            _dBtnOkMBT.setAllCaps(false);
+            _dBtnOkMBO.setAllCaps(false);
+            _dBtnOkMBC.setAllCaps(false);
         }
     }
 

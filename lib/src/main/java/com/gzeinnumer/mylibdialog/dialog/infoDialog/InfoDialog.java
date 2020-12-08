@@ -123,6 +123,10 @@ public class InfoDialog extends InfoDialogSetting {
         this.buttonColor = color;
         return this;
     }
+    public InfoDialog setButtonAllCaps(boolean buttonAllCaps) {
+        this.buttonAllCaps = buttonAllCaps;
+        return this;
+    }
 
     //ACTION CALLBACK
     public InfoDialog onCancelPressedCallBack(OnCancelPressed callBack) {
