@@ -80,6 +80,8 @@ You can change UI with this configuration.
       - etc.
 - Change Button Background Color
   - `.setButtonColor(R.color.amber_200)` you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
+- Disable Text All Caps On Button
+  - `.setButtonAllCaps(false)` default value is true.
 
 ##
 

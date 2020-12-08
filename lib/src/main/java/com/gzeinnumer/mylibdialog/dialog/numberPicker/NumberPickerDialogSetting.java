@@ -23,6 +23,7 @@ public class NumberPickerDialogSetting extends BaseDialog {
     protected NumberPickerDialog.OnOkPressed onOkPressed;
 
     protected int buttonColor = 0;
+    protected boolean buttonAllCaps = true;
 
     private View _view;
     private LinearLayout _dialogCanvas;
@@ -194,6 +195,15 @@ public class NumberPickerDialogSetting extends BaseDialog {
         if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
             _dBtnCancelMBC.setBackgroundColor(getResources().getColor(buttonColor));
             _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
+        }
+
+        if (!buttonAllCaps){
+            _dBtnCancelMBT.setAllCaps(false);
+            _dBtnCancelMBO.setAllCaps(false);
+            _dBtnCancelMBC.setAllCaps(false);
+            _dBtnOkMBT.setAllCaps(false);
+            _dBtnOkMBO.setAllCaps(false);
+            _dBtnOkMBC.setAllCaps(false);
         }
     }
 

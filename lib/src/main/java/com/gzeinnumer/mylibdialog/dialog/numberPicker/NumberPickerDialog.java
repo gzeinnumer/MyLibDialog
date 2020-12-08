@@ -146,6 +146,10 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         this.buttonColor = color;
         return this;
     }
+    public NumberPickerDialog setButtonAllCaps(boolean buttonAllCaps) {
+        this.buttonAllCaps = buttonAllCaps;
+        return this;
+    }
 
     //ACTION CALLBACK
     public NumberPickerDialog onCancelPressedCallBack(OnCancelPressed callBack) {

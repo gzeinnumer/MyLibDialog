@@ -24,6 +24,7 @@ public class InfoDialogSetting extends BaseDialog {
     protected InfoDialog.OnOkPressed onOkPressed;
 
     protected int buttonColor = 0;
+    protected boolean buttonAllCaps = true;
 
     private View _view;
     private LinearLayout _dialogCanvas;
@@ -178,6 +179,12 @@ public class InfoDialogSetting extends BaseDialog {
 
         if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
             _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
+        }
+
+        if (!buttonAllCaps){
+            _dBtnOkMBT.setAllCaps(false);
+            _dBtnOkMBO.setAllCaps(false);
+            _dBtnOkMBC.setAllCaps(false);
         }
     }
 

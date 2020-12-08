@@ -145,6 +145,10 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         this.buttonColor = color;
         return this;
     }
+    public ConfirmDialog setButtonAllCaps(boolean buttonAllCaps) {
+        this.buttonAllCaps = buttonAllCaps;
+        return this;
+    }
 
     //ACTION CALLBACK
     public ConfirmDialog onCancelPressedCallBack(OnCancelPressed callBack) {
