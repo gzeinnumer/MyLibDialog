@@ -344,7 +344,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
   - Add Custom Animation
 - **1.0.7**
   - SetDefault Animation
-- **1.0.7**
+- **1.0.8**
   - Fix Animation
 
 ---
