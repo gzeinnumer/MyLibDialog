@@ -18,6 +18,7 @@
             android:id="@+id/tv_title"
             style="@style/MyTextHeader"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/title_dialog"
@@ -27,6 +28,7 @@
             android:id="@+id/tv_content"
             style="@style/MyTextContent"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/content_dialog" />
@@ -77,6 +79,8 @@
             android:gravity="end">
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBT"
                 style="@style/MyButtonText"
                 android:layout_marginEnd="@dimen/def_margin"
@@ -85,6 +89,8 @@
                 tools:visibility="visible" />
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
                 android:text="@string/ok"
@@ -92,6 +98,8 @@
                 tools:visibility="visible" />
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBO"
                 style="@style/MyButtonOutlined"
                 android:layout_marginEnd="@dimen/def_margin"
@@ -99,12 +107,16 @@
                 android:visibility="gone" />
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBO"
                 style="@style/MyButtonOutlined"
                 android:text="@string/ok"
                 android:visibility="gone" />
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBC"
                 style="@style/MyButtonContained"
                 android:layout_marginEnd="@dimen/def_margin"
@@ -112,6 +124,8 @@
                 android:visibility="gone" />
 
             <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBC"
                 style="@style/MyButtonContained"
                 android:text="@string/ok"
