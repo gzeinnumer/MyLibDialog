@@ -12,8 +12,8 @@ public class ConfirmDialog extends ConfirmDialogSetting {
 
     public static final String TAG = "CustomDialog";
 
-    private FragmentManager _context;
-    private FragmentTransaction _transaction;
+    private final FragmentManager _context;
+    private final FragmentTransaction _transaction;
 
     public ConfirmDialog(FragmentManager context) {
         this._context = context;
@@ -141,12 +141,20 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         this.buttonGravity = gravity;
         return this;
     }
+
     public ConfirmDialog setButtonColor(int color) {
         this.buttonColor = color;
         return this;
     }
+
     public ConfirmDialog setButtonAllCaps(boolean buttonAllCaps) {
         this.buttonAllCaps = buttonAllCaps;
+        return this;
+    }
+
+    //cancleable
+    public ConfirmDialog setCanceledOnTouchOutside(boolean enableOnTouch) {
+        this.canceledOnTouchOutside = enableOnTouch;
         return this;
     }
 
@@ -155,6 +163,7 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         this.onCancelPressed = callBack;
         return this;
     }
+
     public ConfirmDialog onOkPressedCallBack(OnOkPressed callBack) {
         this.onOkPressed = callBack;
         return this;

@@ -7,14 +7,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
-import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
 public class NumberPickerDialog extends NumberPickerDialogSetting {
 
     public static final String TAG = "CustomDialog";
 
-    private FragmentManager _context;
-    private FragmentTransaction _transaction;
+    private final FragmentManager _context;
+    private final FragmentTransaction _transaction;
 
     public NumberPickerDialog(FragmentManager context) {
         this._context = context;
@@ -156,8 +155,15 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         this.onCancelPressed = callBack;
         return this;
     }
+
     public NumberPickerDialog onOkPressedCallBack(OnOkPressed callBack) {
         this.onOkPressed = callBack;
+        return this;
+    }
+
+    //cancleable
+    public NumberPickerDialog setCanceledOnTouchOutside(boolean enableOnTouch) {
+        this.canceledOnTouchOutside = enableOnTouch;
         return this;
     }
 

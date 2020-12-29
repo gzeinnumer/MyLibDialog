@@ -19,6 +19,8 @@ import com.gzeinnumer.mylibdialog.R;
 public abstract class BaseDialog extends DialogFragment {
 
     protected int animationStyle = R.style.DialogStyle_In;
+    private final boolean cancelable = false;
+    protected boolean canceledOnTouchOutside = false;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,8 +39,8 @@ public abstract class BaseDialog extends DialogFragment {
         super.onStart();
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        getDialog().setCancelable(false);
-        getDialog().setCanceledOnTouchOutside(false);
+        getDialog().setCancelable(cancelable);
+        getDialog().setCanceledOnTouchOutside(canceledOnTouchOutside);
 
         boolean isFullScreen = false;
         if (isFullScreen) {
