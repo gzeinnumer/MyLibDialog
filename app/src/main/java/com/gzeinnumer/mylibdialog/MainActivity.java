@@ -3,23 +3,15 @@ package com.gzeinnumer.mylibdialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.NumberPicker;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.gzeinnumer.mylibdialog.dialog.infoDialog.InfoDialog;
+import com.gzeinnumer.mylibdialog.dialog.numberPicker.NumberPickerDialog;
+
 //import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 //import com.gzeinnumer.mylibdialog.constant.DateScreenStyle;
 //import com.gzeinnumer.mylibdialog.constant.DialogType;
-import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
-import com.gzeinnumer.mylibdialog.dialog.infoDialog.InfoDialog;
-import com.gzeinnumer.mylibdialog.dialog.numberPicker.NumberPickerDialog;
-//import com.gzeinnumer.mylibdialog.dialog.datePickerDialog.multi.MultiDatePickerDialog;
-//import com.gzeinnumer.mylibdialog.dialog.datePickerDialog.single.SingleDatePickerDialog;
-//import com.gzeinnumer.mylibdialog.dialog.infoDialog.InfoDialog;
-//import com.gzeinnumer.mylibdialog.dialog.loadingDialog.LoadingDialog;
-//import com.gzeinnumer.mylibdialog.dialog.numberPicker.NumberPickerDialog;
-//import com.gzeinnumer.mylibdialog.dialog.timePickerDialog.TimePickerDialog;
-//import com.gzeinnumer.mylibdialog.dialog.timePickerDialog.TimeValueResult;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        new InfoDialog(getSupportFragmentManager())
+                .setCanceledOnTouchOutside(true)
+                .show();
 
 //        _DatePickerDialogMultiNew();
 //        _TimePickerDialog();

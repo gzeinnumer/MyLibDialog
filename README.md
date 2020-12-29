@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-2.0.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-2.0.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
@@ -112,6 +112,13 @@ dialog.onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
 dialog.show();
 ```
 
+To enable `CanceledOnTouchOutside` :
+
+```java
+new ConfirmDialog(getSupportFragmentManager())
+    .setCanceledOnTouchOutside(true)
+```
+
 **Preview** :
 
 <p align="center">
@@ -146,6 +153,13 @@ new InfoDialog(getSupportFragmentManager())
         }
     })
     .show();
+```
+
+To enable `CanceledOnTouchOutside` :
+
+```java
+new InfoDialog(getSupportFragmentManager())
+    .setCanceledOnTouchOutside(true)
 ```
 
 **Preview** :
@@ -189,6 +203,13 @@ new NumberPickerDialog(getSupportFragmentManager())
         }
     })
     .show();
+```
+
+To enable `CanceledOnTouchOutside` :
+
+```java
+new InfoDialog(getSupportFragmentManager())
+    .setCanceledOnTouchOutside(true)
 ```
 
 **Preview** :
@@ -350,6 +371,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
   - Enable or disable TextAllCaps
 - **2.0.1**
   - Bugs Fixing
+- **2.0.2**
+  - add enable `CanceledOnTouchOutside`
 
 ---
 

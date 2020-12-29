@@ -8,14 +8,13 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.gzeinnumer.mylibdialog.constant.ButtonStyle;
 import com.gzeinnumer.mylibdialog.constant.DialogType;
-import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 
 public class InfoDialog extends InfoDialogSetting {
 
     public static final String TAG = "CustomDialog";
 
-    private FragmentManager _context;
-    private FragmentTransaction _transaction;
+    private final FragmentManager _context;
+    private final FragmentTransaction _transaction;
 
     public InfoDialog(FragmentManager context) {
         this._context = context;
@@ -133,8 +132,15 @@ public class InfoDialog extends InfoDialogSetting {
         this.onCancelPressed = callBack;
         return this;
     }
+
     public InfoDialog onOkPressedCallBack(OnOkPressed callBack) {
         this.onOkPressed = callBack;
+        return this;
+    }
+
+    //cancleable
+    public InfoDialog setCanceledOnTouchOutside(boolean enableOnTouch) {
+        this.canceledOnTouchOutside = enableOnTouch;
         return this;
     }
 
