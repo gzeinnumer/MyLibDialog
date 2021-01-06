@@ -2,7 +2,6 @@ package com.gzeinnumer.mylibdialog;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((Button) findViewById(R.id.btn)).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 new NumberPickerDialog(getSupportFragmentManager())
-                        .setAnimationStyle(R.style.DialogStyle_Slide)
+                        .setAnimationStyle(R.style.LibDialog_DialogStyle_Slide)
                         .setButtonAllCaps(false)
                         .setTitle("ini title")
                         .setContent("ini content").show();
