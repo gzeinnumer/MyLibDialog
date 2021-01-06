@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 new NumberPickerDialog(getSupportFragmentManager())
-                        .setAnimationStyle(R.style.LibDialog_DialogStyle_Slide)
+                        .setAnimationStyle(R.style.DialogStyle_Slide)
                         .setButtonAllCaps(false)
                         .setTitle("ini title")
                         .setContent("ini content").show();
