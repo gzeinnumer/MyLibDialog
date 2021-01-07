@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-2.0.3-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-2.0.4-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
@@ -375,6 +375,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
   - add enable `CanceledOnTouchOutside`
 - **2.0.3**
   - Bugs Fixing Style
+- **2.0.4**
+  - Color
 
 ---
 
