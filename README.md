@@ -383,7 +383,7 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 - **2.0.3**
   - Bugs Fixing Style
 - **2.1.0**
-  - Add Uto Click
+  - Add Auto Click
 
 ---
 
