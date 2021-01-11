@@ -144,6 +144,11 @@ public class InfoDialog extends InfoDialogSetting {
         return this;
     }
 
+    public InfoDialog autoDismisOnSecond(int second) {
+        this.dismissIn = second;
+        return this;
+    }
+
     public void show() {
         this.show(_transaction, InfoDialog.TAG);
     }

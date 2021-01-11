@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         new InfoDialog(getSupportFragmentManager())
                 .setCanceledOnTouchOutside(true)
+                .autoDismisOnSecond(10)
                 .show();
 
 //        _DatePickerDialogMultiNew();
