@@ -26,6 +26,7 @@ public class InfoDialogSetting extends BaseDialog {
     protected InfoDialog.OnCancelPressed onCancelPressed;
 
     protected InfoDialog.OnOkPressed onOkPressed;
+    private CountDownTimer countDownTimer;
 
     protected int buttonColor = 0;
     protected boolean buttonAllCaps = true;
@@ -198,7 +199,7 @@ public class InfoDialogSetting extends BaseDialog {
             String btnNameO  = _dBtnOkMBO.getText().toString();
             String btnNameC  = _dBtnOkMBC.getText().toString();
 
-            new CountDownTimer((dismissIn+1)*1000, 1000) {
+            countDownTimer = new CountDownTimer((dismissIn+1)*1000, 1000) {
 
                 public void onTick(long millisUntilFinished) {
                     int progress = (int) millisUntilFinished / 1000;
@@ -208,11 +209,16 @@ public class InfoDialogSetting extends BaseDialog {
                 }
 
                 public void onFinish() {
-                    _dBtnOkMBT.performClick();
-                    _dBtnOkMBO.performClick();
-                    _dBtnOkMBC.performClick();
+                    try {
+                        _dBtnOkMBT.performClick();
+                        _dBtnOkMBO.performClick();
+                        _dBtnOkMBC.performClick();
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
-            }.start();
+            };
+            countDownTimer.start();
         }
     }
 
@@ -221,24 +227,30 @@ public class InfoDialogSetting extends BaseDialog {
         _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed != null)
+                if (onOkPressed != null){
+                    countDownTimer.cancel();
                     onOkPressed.onOkPressed();
+                }
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed != null)
+                if (onOkPressed != null){
+                    countDownTimer.cancel();
                     onOkPressed.onOkPressed();
+                }
                 getDialog().dismiss();
             }
         });
         _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onOkPressed != null)
+                if (onOkPressed != null){
+                    countDownTimer.cancel();
                     onOkPressed.onOkPressed();
+                }
                 getDialog().dismiss();
             }
         });
