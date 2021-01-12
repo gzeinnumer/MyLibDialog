@@ -209,9 +209,13 @@ public class InfoDialogSetting extends BaseDialog {
                 }
 
                 public void onFinish() {
-                    _dBtnOkMBT.performClick();
-                    _dBtnOkMBO.performClick();
-                    _dBtnOkMBC.performClick();
+                    try {
+                        _dBtnOkMBT.performClick();
+                        _dBtnOkMBO.performClick();
+                        _dBtnOkMBC.performClick();
+                    } catch (Exception e){
+                        e.printStackTrace();
+                    }
                 }
             };
             countDownTimer.start();
