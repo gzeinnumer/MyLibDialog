@@ -5,6 +5,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.gzeinnumer.mylibdialog.dialog.confirmDialog.ConfirmDialog;
 import com.gzeinnumer.mylibdialog.dialog.infoDialog.InfoDialog;
 import com.gzeinnumer.mylibdialog.dialog.loadingDialog.LoadingDialog;
 
@@ -20,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //aktifkan salah satu
-        enableLoading();
-//        enableConfirm(); // jangan pakai. ada error
+//        enableLoading();
+        renewDialogInfo(1).show(); // jangan pakai. ada error
     }
 
     private void enableLoading() {
@@ -56,22 +57,21 @@ public class MainActivity extends AppCompatActivity {
                 .setContent(String.valueOf(i));
     }
 
-    private void enableConfirm() {
-        renewInfo = renewDialogInfo(1);
-        renewInfo.show();
-        renewInfo.onOkPressedCallBack(new InfoDialog.OnOkPressed() {
-            @Override
-            public void onOkPressed() {
-                renewInfo.dismiss();
-                renewInfo = renewDialogInfo(2);
-                renewInfo.show();
-            }
-        });
-    }
+//    private void enableConfirm() {
+//        renewInfo = renewDialogInfo(1);
+//        renewInfo.show();
+//        renewInfo.onOkPressedCallBack(new InfoDialog.OnOkPressed() {
+//            @Override
+//            public void onOkPressed() {
+//                renewInfo.dismiss();
+//                renewInfo = renewDialogInfo(2);
+//                renewInfo.show();
+//            }
+//        });
+//    }
 
-    private InfoDialog renewDialogInfo(int i) {
-        return new InfoDialog(getSupportFragmentManager())
-                .setContent(String.valueOf(i))
-                .autoDismisOnSecond(3);
+    private ConfirmDialog renewDialogInfo(int i) {
+        return new ConfirmDialog(getSupportFragmentManager())
+                .setContent(String.valueOf(i));
     }
 }
