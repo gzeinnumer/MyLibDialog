@@ -39,17 +39,18 @@
             android:layout_height="wrap_content"
             android:gravity="end">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:id="@+id/d_btn_cancel_MBT"
-                style="@style/LibDialog_MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
+                android:textColor="@color/colorPrimary"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/LibDialog_MyButtonText"
                 android:layout_width="wrap_content"
@@ -58,7 +59,7 @@
                 android:visibility="gone"
                 tools:visibility="visible" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/d_btn_cancel_MBO"
                 style="@style/LibDialog_MyButtonOutlined"
                 android:layout_width="wrap_content"
@@ -67,7 +68,7 @@
                 android:text="@string/cancel"
                 android:visibility="gone" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/d_btn_ok_MBO"
                 style="@style/LibDialog_MyButtonOutlined"
                 android:layout_width="wrap_content"
@@ -75,7 +76,7 @@
                 android:text="@string/ok"
                 android:visibility="gone" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/d_btn_cancel_MBC"
                 style="@style/LibDialog_MyButtonContained"
                 android:layout_width="wrap_content"
@@ -84,7 +85,7 @@
                 android:text="@string/cancel"
                 android:visibility="gone" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/d_btn_ok_MBC"
                 style="@style/LibDialog_MyButtonContained"
                 android:layout_width="wrap_content"
