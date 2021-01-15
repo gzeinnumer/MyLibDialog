@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/dialog_canvas"
     android:layout_width="match_parent"
@@ -13,16 +12,16 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/def_margin">
+        android:padding="@dimen/def_margin_dialog">
 
         <TextView
             android:textAlignment="center"
             android:id="@+id/tv_content"
-            style="@style/MyTextContent"
+            style="@style/LibDialog_MyTextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/text_margin"
-            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginVertical="@dimen/text_margin_dialog"
+            android:layout_marginBottom="@dimen/text_margin_dialog"
             android:text="@string/content_dialog" />
 
         <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
@@ -33,7 +32,7 @@
             app:slidingloader_dotsDist="6dp"
             app:slidingloader_dotsRadius="10dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="@dimen/def_margin"
+            android:layout_marginBottom="@dimen/def_margin_dialog"
             app:slidingloader_firstDotColor="@color/colorPrimary"
             app:slidingloader_secondDotColor="@color/colorAccent"
             app:slidingloader_thirdDotColor="@color/colorPrimaryDark" />

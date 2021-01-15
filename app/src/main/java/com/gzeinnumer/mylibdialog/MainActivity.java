@@ -17,23 +17,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        new InfoDialog(getSupportFragmentManager())
-                .autoDismisOnSecond(10)
-                .setButtonAllCaps(false)
-                .setCanceledOnTouchOutside(false)
-                .setButtonGravity(Gravity.CENTER)
-                .setContentAlignment(View.TEXT_ALIGNMENT_CENTER)
-                .setButtonStyle(ButtonStyle.ButtonContained)
-                .setButtonColor(R.color.colorPrimary)
-                .setBtnOkTitle("Ya")
-                .setContent("Yakin ingin keluar Aplikasi")
-                .onOkPressedCallBack(new InfoDialog.OnOkPressed() {
-                    @Override
-                    public void onOkPressed() {
-
-                    }
-                })
-                .show();
     }
 }
