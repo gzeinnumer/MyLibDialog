@@ -13,33 +13,33 @@
         <item name="colorPrimaryDark">@color/deep_orange_700</item>
         <item name="colorAccent">@color/lime_A100</item>
     </style>
-    <style name="MyLibDialog_DialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+    <style name="MyLibDialogDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
     </style>
 
-    <style name="MyLibDialog_DialogStyle_In" parent="Theme.MaterialComponents.Light.Dialog">
+    <style name="MyLibDialogDialogStyle_In" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
         <item name="android:windowEnterAnimation">@anim/anim_in</item>
         <item name="android:windowExitAnimation">@anim/anim_out</item>
     </style>
 
-    <style name="MyLibDialog_DialogStyle_Slide" parent="Theme.MaterialComponents.Light.Dialog">
+    <style name="DialogStyle_Slide" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
         <item name="android:windowEnterAnimation">@anim/slide_up</item>
         <item name="android:windowExitAnimation">@anim/slide_down</item>
     </style>
 
-    <style name="MyLibDialog_MyDivider">
+    <style name="MyLibDialogMyDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:layout_marginTop">@dimen/text_margin</item>
         <item name="android:background">?android:attr/listDivider</item>
     </style>
 
-    <style name="MyLibDialog_MyTextHeader">
+    <style name="MyLibDialogMyTextHeader">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:alpha">1</item>
@@ -49,7 +49,7 @@
         <item name="android:layout_marginTop">@dimen/text_margin</item>
     </style>
 
-    <style name="MyLibDialog_MyTextContent">
+    <style name="MyLibDialogMyTextContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:alpha">1</item>
@@ -57,34 +57,34 @@
         <item name="android:textSize">@dimen/h3</item>
     </style>
 
-    <style name="MyLibDialog_MyButtonText" parent="Widget.MaterialComponents.Button.TextButton">
+    <style name="MyLibDialogMyButtonText" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
-    <style name="MyLibDialog_MyButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="MyLibDialogMyButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
 
-    <style name="MyLibDialog_MyButtonContained">
+    <style name="MyLibDialogMyButtonContained">
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
 
-    <style name="MyLibDialog_MyButtonIcon" parent="Widget.MaterialComponents.Button.Icon">
+    <style name="MyLibDialogMyButtonIcon" parent="Widget.MaterialComponents.Button.Icon">
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:layout_width">wrap_content</item>
     </style>
 
-    <style name="MyLibDialog_MyTextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="MyLibDialogMyTextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/space_between_edittext</item>
     </style>
 
-    <style name="MyLibDialog_MyTextInputEditText">
+    <style name="MyLibDialogMyTextInputEditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:alpha">1</item>
