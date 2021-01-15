@@ -12,25 +12,25 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/def_margin_dialog">
+        android:padding="@dimen/def_margin">
 
         <TextView
             android:id="@+id/tv_title"
-            style="@style/LibDialog_MyTextHeader"
+            style="@style/MyTextHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/text_margin_dialog"
+            android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/title_dialog"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tv_content"
-            style="@style/LibDialog_MyTextContent"
+            style="@style/MyTextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/text_margin_dialog"
+            android:layout_marginBottom="@dimen/text_margin"
             android:text="@string/content_dialog" />
 
         <LinearLayout
@@ -41,7 +41,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBT"
-                style="@style/LibDialog_MyButtonText"
+                style="@style/MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
@@ -50,7 +50,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBO"
-                style="@style/LibDialog_MyButtonOutlined"
+                style="@style/MyButtonOutlined"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
@@ -58,7 +58,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBC"
-                style="@style/LibDialog_MyButtonContained"
+                style="@style/MyButtonContained"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
