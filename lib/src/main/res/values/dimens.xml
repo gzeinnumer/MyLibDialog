@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="h3_dialog">16sp</dimen>
-    <dimen name="button_height_dialog">48dp</dimen>
-    <dimen name="def_margin_dialog">16dp</dimen>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="def_margin">16dp</dimen>
+    <dimen name="text_margin">10dp</dimen>
     <dimen name="space_between_edittext">10dp</dimen>
-    <dimen name="text_margin_dialog">10dp</dimen>
 </resources>
