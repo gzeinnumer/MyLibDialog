@@ -18,7 +18,7 @@ import com.gzeinnumer.mylibdialog.R;
 
 public abstract class BaseDialog extends DialogFragment {
 
-    protected int animationStyle = R.style.MyLibDialog_DialogStyle_In;
+    protected int animationStyle = R.style.MLDDialogStyle_In;
     private final boolean cancelable = false;
     protected boolean canceledOnTouchOutside = false;
 
