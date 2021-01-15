@@ -1,10 +1,11 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorAccent</item>
     </style>
 
     <style name="AppTheme2" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
@@ -12,6 +13,7 @@
         <item name="colorPrimary">@color/green_600</item>
         <item name="colorPrimaryDark">@color/deep_orange_700</item>
         <item name="colorAccent">@color/lime_A100</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorAccent</item>
     </style>
 
     <style name="LibDialog_DialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
