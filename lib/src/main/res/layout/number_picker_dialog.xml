@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/tv_title"
-            style="@style/MyTextHeader"
+            style="@style/MyLibDialog_MyTextHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/tv_content"
-            style="@style/MyTextContent"
+            style="@style/MyLibDialog_MyTextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
@@ -41,14 +41,14 @@
 
             <Button
                 android:id="@+id/btn_subtract"
-                style="@style/MyButtonContained"
+                style="@style/MyLibDialog_MyButtonContained"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:text="-"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/MyTextInputLayoutOutlinedBox"
+                style="@style/MyLibDialog_MyTextInputLayoutOutlinedBox"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="-2dp"
@@ -57,7 +57,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ed_number"
-                    style="@style/MyTextInputEditText"
+                    style="@style/MyLibDialog_MyTextInputEditText"
                     tools:text="100"
                     android:textAlignment="center" />
 
@@ -65,7 +65,7 @@
 
             <Button
                 android:id="@+id/btn_add"
-                style="@style/MyButtonContained"
+                style="@style/MyLibDialog_MyButtonContained"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:text="+"
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBT"
-                style="@style/MyButtonText"
+                style="@style/MyLibDialog_MyButtonText"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
                 android:visibility="gone"
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBT"
-                style="@style/MyButtonText"
+                style="@style/MyLibDialog_MyButtonText"
                 android:text="@string/ok"
                 android:visibility="gone"
                 tools:visibility="visible" />
@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBO"
-                style="@style/MyButtonOutlined"
+                style="@style/MyLibDialog_MyButtonOutlined"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
                 android:visibility="gone" />
@@ -110,7 +110,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBO"
-                style="@style/MyButtonOutlined"
+                style="@style/MyLibDialog_MyButtonOutlined"
                 android:text="@string/ok"
                 android:visibility="gone" />
 
@@ -118,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_cancel_MBC"
-                style="@style/MyButtonContained"
+                style="@style/MyLibDialog_MyButtonContained"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:text="@string/cancel"
                 android:visibility="gone" />
@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/d_btn_ok_MBC"
-                style="@style/MyButtonContained"
+                style="@style/MyLibDialog_MyButtonContained"
                 android:text="@string/ok"
                 android:visibility="gone" />
 
