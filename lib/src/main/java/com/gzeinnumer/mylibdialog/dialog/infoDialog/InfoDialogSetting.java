@@ -190,22 +190,30 @@ public class InfoDialogSetting extends BaseDialog {
             _dBtnOkMBO.setAllCaps(false);
             _dBtnOkMBC.setAllCaps(false);
         }
-
-        countDownTimer = new CountDownTimer((dismissIn+1)*1000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                int progress = (int) millisUntilFinished / 1000;
-            }
-            public void onFinish() {
-                try {
-                    _dBtnOkMBT.performClick();
-                    _dBtnOkMBO.performClick();
-                    _dBtnOkMBC.performClick();
-                }catch (Exception e){
-                    e.printStackTrace();
+        if (dismissIn!=-1) {
+            String btnNameT  = _dBtnOkMBT.getText().toString();
+            String btnNameO  = _dBtnOkMBO.getText().toString();
+            String btnNameC  = _dBtnOkMBC.getText().toString();
+            countDownTimer = new CountDownTimer((dismissIn + 1) * 1000, 1000) {
+                public void onTick(long millisUntilFinished) {
+                    int progress = (int) millisUntilFinished / 1000;
+                    _dBtnOkMBT.setText(btnNameT + "(" + progress + ")");
+                    _dBtnOkMBO.setText(btnNameO + "(" + progress + ")");
+                    _dBtnOkMBC.setText(btnNameC + "(" + progress + ")");
                 }
-            }
-        };
-        countDownTimer.start();
+
+                public void onFinish() {
+                    try {
+                        _dBtnOkMBT.performClick();
+                        _dBtnOkMBO.performClick();
+                        _dBtnOkMBC.performClick();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+            countDownTimer.start();
+        }
     }
 
 
@@ -214,7 +222,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
@@ -224,7 +232,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
@@ -234,7 +242,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
