@@ -3,6 +3,6 @@
     <dimen name="h3">16sp</dimen>
     <dimen name="button_height">48dp</dimen>
     <dimen name="def_margin">16dp</dimen>
-    <dimen name="space_between_edittext">10dp</dimen>
     <dimen name="text_margin">10dp</dimen>
+    <dimen name="space_between_edittext">10dp</dimen>
 </resources>

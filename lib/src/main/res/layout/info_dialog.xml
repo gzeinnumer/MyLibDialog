@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/def_margin">
+        android:padding="@dimen/def_margin_dialog">
 
         <TextView
             android:id="@+id/tv_title"
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin_dialog"
             android:text="@string/title_dialog"
             android:textAlignment="center" />
 
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin_dialog"
             android:text="@string/content_dialog" />
 
         <LinearLayout

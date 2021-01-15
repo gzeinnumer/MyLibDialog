@@ -1,12 +1,9 @@
 package com.gzeinnumer.mylibdialog.dialog.infoDialog;
 
-import android.animation.ValueAnimator;
 import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -26,7 +23,6 @@ public class InfoDialogSetting extends BaseDialog {
     protected InfoDialog.OnCancelPressed onCancelPressed;
 
     protected InfoDialog.OnOkPressed onOkPressed;
-    private CountDownTimer countDownTimer;
 
     protected int buttonColor = 0;
     protected boolean buttonAllCaps = true;
@@ -67,6 +63,7 @@ public class InfoDialogSetting extends BaseDialog {
     protected int tvContentAlignment = View.TEXT_ALIGNMENT_TEXT_START; //default from view
 
     protected int dismissIn = -1;
+    private CountDownTimer countDownTimer;
 
     private void initView() {
         _dialogCanvas = _view.findViewById(R.id.dialog_canvas);
@@ -193,19 +190,16 @@ public class InfoDialogSetting extends BaseDialog {
             _dBtnOkMBO.setAllCaps(false);
             _dBtnOkMBC.setAllCaps(false);
         }
-
-        if (dismissIn!=-1){
+        if (dismissIn!=-1) {
             String btnNameT  = _dBtnOkMBT.getText().toString();
             String btnNameO  = _dBtnOkMBO.getText().toString();
             String btnNameC  = _dBtnOkMBC.getText().toString();
-
-            countDownTimer = new CountDownTimer((dismissIn+1)*1000, 1000) {
-
+            countDownTimer = new CountDownTimer((dismissIn + 1) * 1000, 1000) {
                 public void onTick(long millisUntilFinished) {
                     int progress = (int) millisUntilFinished / 1000;
-                    _dBtnOkMBT.setText(btnNameT+"("+progress+")");
-                    _dBtnOkMBO.setText(btnNameO+"("+progress+")");
-                    _dBtnOkMBC.setText(btnNameC+"("+progress+")");
+                    _dBtnOkMBT.setText(btnNameT + "(" + progress + ")");
+                    _dBtnOkMBO.setText(btnNameO + "(" + progress + ")");
+                    _dBtnOkMBC.setText(btnNameC + "(" + progress + ")");
                 }
 
                 public void onFinish() {
@@ -213,7 +207,7 @@ public class InfoDialogSetting extends BaseDialog {
                         _dBtnOkMBT.performClick();
                         _dBtnOkMBO.performClick();
                         _dBtnOkMBC.performClick();
-                    } catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
@@ -228,7 +222,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
@@ -238,7 +232,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
@@ -248,7 +242,7 @@ public class InfoDialogSetting extends BaseDialog {
             @Override
             public void onClick(View v) {
                 if (onOkPressed != null){
-                    countDownTimer.cancel();
+                    if (dismissIn!=-1) countDownTimer.cancel();
                     onOkPressed.onOkPressed();
                 }
                 getDialog().dismiss();
