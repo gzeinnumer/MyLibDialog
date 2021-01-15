@@ -16,7 +16,7 @@
 
         <TextView
             android:id="@+id/tv_title"
-            style="@style/MyTextHeader"
+            style="@style/MLDMyTextHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
@@ -26,7 +26,7 @@
 
         <TextView
             android:id="@+id/tv_content"
-            style="@style/MyTextContent"
+            style="@style/MLDMyTextContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
@@ -41,7 +41,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBT"
-                style="@style/MyButtonText"
+                style="@style/MLDMyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
@@ -50,7 +50,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBO"
-                style="@style/MyButtonOutlined"
+                style="@style/MLDMyButtonOutlined"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
@@ -58,7 +58,7 @@
 
             <Button
                 android:id="@+id/d_btn_ok_MBC"
-                style="@style/MyButtonContained"
+                style="@style/MLDMyButtonContained"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ok"
