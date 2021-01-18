@@ -34,8 +34,8 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="@dimen/def_margin"
             app:slidingloader_firstDotColor="@color/colorPrimary"
-            app:slidingloader_secondDotColor="@color/colorAccent"
-            app:slidingloader_thirdDotColor="@color/colorPrimaryDark" />
+            app:slidingloader_secondDotColor="@color/colorPrimaryDark"
+            app:slidingloader_thirdDotColor="@color/colorPrimary" />
 
     </LinearLayout>
 </LinearLayout>
