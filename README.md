@@ -69,7 +69,7 @@ If you want to change default color, add value to `res/color.xml`
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 </resources>
-``
+``1
 
 ---
 
