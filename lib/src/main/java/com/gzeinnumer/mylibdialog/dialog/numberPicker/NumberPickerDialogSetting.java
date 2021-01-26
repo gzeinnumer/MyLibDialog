@@ -188,16 +188,21 @@ public class NumberPickerDialogSetting extends BaseDialog {
             _tvTitle.setTextAlignment(tvTitleAlignment);
         }
 
-        if(tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START){
+        if (tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START) {
             _tvContent.setTextAlignment(tvContentAlignment);
         }
 
-        if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
+        if (buttonColor != 0 && btnStyle == ButtonStyle.ButtonContained) {
             _dBtnCancelMBC.setBackgroundColor(buttonColor);
             _dBtnOkMBC.setBackgroundColor(buttonColor);
         }
 
-        if (!buttonAllCaps){
+        if (buttonColor != 0) {
+            _btnSubtract.setBackgroundColor(buttonColor);
+            _btnAdd.setBackgroundColor(buttonColor);
+        }
+
+        if (!buttonAllCaps) {
             _dBtnCancelMBT.setAllCaps(false);
             _dBtnCancelMBO.setAllCaps(false);
             _dBtnCancelMBC.setAllCaps(false);
