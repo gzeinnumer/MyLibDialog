@@ -184,8 +184,8 @@ public class ConfirmDialogSetting extends BaseDialog {
         }
 
         if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
-            _dBtnCancelMBC.setBackgroundColor(getResources().getColor(buttonColor));
-            _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
+            _dBtnCancelMBC.setBackgroundColor(buttonColor);
+            _dBtnOkMBC.setBackgroundColor(buttonColor);
         }
 
         if (!buttonAllCaps){
