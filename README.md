@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-2.2.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-2.2.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
@@ -407,6 +407,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
   - Bug Fixing
 - **2.2.1**
   - Bug Fixing
+- **2.2.2**
+  - Change color method
 
 ---
 

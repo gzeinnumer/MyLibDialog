@@ -182,7 +182,7 @@ public class InfoDialogSetting extends BaseDialog {
         }
 
         if (buttonColor!=0 && btnStyle == ButtonStyle.ButtonContained){
-            _dBtnOkMBC.setBackgroundColor(getResources().getColor(buttonColor));
+            _dBtnOkMBC.setBackgroundColor(buttonColor);
         }
 
         if (!buttonAllCaps){

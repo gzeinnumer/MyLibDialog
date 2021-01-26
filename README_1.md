@@ -12,7 +12,7 @@ You can change UI with this configuration.
 - Change Text Title Size
   - `.setTitleSize(21)`
 - Change Text Title Color
-  - `.setTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setTitleColor(getResources().getColor(R.color.colorPrimary))`
   - `.setTitleColor(Color.parseColor("#03DAC5"))`
 - Change Text Title Alignment
   - `.setTitleAlignment(View.TEXT_ALIGNMENT_TEXT_END)`
@@ -28,7 +28,7 @@ You can change UI with this configuration.
 - Change Text Content Size
   - `.setContentSize(21)`
 - Change Text Content Color
-  - `.setContentColor(getResources().getColor(R.color.colorAccent))`
+  - `.setContentColor(getResources().getColor(R.color.colorPrimary))`
   - `.setContentColor(Color.parseColor("#03DAC5"))`
 - Change Text Content Alignment
   - `.setContentAlignment(View.TEXT_ALIGNMENT_TEXT_END)`
@@ -42,7 +42,7 @@ You can change UI with this configuration.
 - Change Text Button Cancel
   - `.setBtnCancelTitle("Batal")`
 - Change Text Button Cancel Color
-  - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorPrimary))`
   - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
 - Change Icon Button Cancel
   - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
@@ -54,7 +54,7 @@ You can change UI with this configuration.
 - Change Text Button Ok
   - `.setBtnOkTitle("Yuhuu")`
 - Change Text Button Ok Color
-  - `.setBtnOkTitleColor(getResources().getColor(R.color.colorAccent))`
+  - `.setBtnOkTitleColor(getResources().getColor(R.color.colorPrimary))`
   - `.setBtnOkTitleColor(Color.parseColor("#03DAC5"))`
 - Change Icon Button Ok
   - `.setOkIconLeft(R.drawable.ic_baseline_add_24)`
@@ -79,7 +79,7 @@ You can change UI with this configuration.
       - `Gravity.START`
       - etc.
 - Change Button Background Color
-  - `.setButtonColor(R.color.amber_200)` you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
+  - `.setButtonColor(getResources().getColor(R.color.colorPrimary))` or `.setButtonColor(Color.parseColor("#03DAC5"))` you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
 - Disable Text All Caps On Button
   - `.setButtonAllCaps(false)` default value is true.
 
