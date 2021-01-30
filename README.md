@@ -56,10 +56,17 @@ dependencies {
 **First Step**. Use `MaterialComponents` in your style :
 
 ```xml
+<style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+</style>
+```
+
+If you want to change default font, add `custom_font.ttf` to your `res` directory `res->font`.
+Than add this `style` to your `style.xml`/`themes.xml`
+```xml
 <!-- Base application theme. -->
 <!-- Change Base Font -->
 <style name="Theme.MyLibsTesting" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-    <!-- Customize your theme here. -->
     <item name="android:fontFamily">@font/test_font</item>
 </style>
 
