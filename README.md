@@ -10,15 +10,25 @@
     <a><img src="https://img.shields.io/badge/Version-2.2.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
-    <a><img src="https://img.shields.io/badge/Koltin-Suport-green?logo=kotlin&style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
     <p>Simple way to use Dialog Fragment</p>
 </div>
 
 ---
+# Content List
+* [Download](#download)
+* [Feature List](#feature-list)
+* [Tech stack and 3rd library](#tech-stack-and-3rd-library)
+* [Usage](#usage)
+* [Example Code/App](#example-codeapp)
+* [Version](#version)
+* [Contribution](#contribution)
 
-## Download
+---
+# Download
+
 Add maven `jitpack.io` and `dependencies` in `build.gradle (Project)` :
 ```gradle
 // build.gradle project
@@ -38,7 +48,8 @@ dependencies {
 }
 ```
 
-## Feature List
+---
+# Feature List
 - [x] [ConfirmDialog](#confirmdialog)
 - [x] [InfoDialog](#infodialog)
 - [x] [NumberPickerDialog](#numberpickerdialog)
@@ -46,12 +57,14 @@ dependencies {
 - [x] [SingleDatePickerDialog](#singledatepickerdialog)
 - [x] [MultiDatePickerDialog](#multidatepickerdialog)
 
-## Tech stack and 3rd library
+---
+# Tech stack and 3rd library
 - Material.io ([docs](https://material.io/develop/android/docs/getting-started))
 - agrawalsuneet/DotLoadersPack-Android ([docs](https://github.com/agrawalsuneet/DotLoadersPack-Android))
 - DialogFragment ([docs](https://developer.android.com/reference/android/app/DialogFragment))
 
 ---
+# Usage
 
 **First Step**. Use `MaterialComponents` in your style :
 
@@ -115,15 +128,9 @@ If you want to change default color, add value to `res/color.xml`
 </resources>
 ```
 
----
-
-## USE
-
+#
 ### ConfirmDialog
 Dialog with **1 Title, 1 Content, 1 Negative Button, 1 Positive Button**.
-
-**Code** :
-
 ```java
 new ConfirmDialog(getSupportFragmentManager())
     .setTitle("ini title")
@@ -419,12 +426,12 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/MyLibDialog/blob/main/README_6.md).
 
 ---
+# Example Code/App
 
 [Sample Code And App](https://github.com/gzeinnumer/MyLibDialogExample)
 
 ---
-
-### Version
+# Version
 - **1.0.5**
   - First Release
 - **1.0.6**
@@ -459,9 +466,9 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
   - Change color method
 
 ---
+# Contribution
 
-### Contribution
-You can sent your constibution to `branche` `open-pull`.
+You can sent your constibution to `branch` `open-pull`.
 
 ---
 
