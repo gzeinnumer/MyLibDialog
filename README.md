@@ -181,6 +181,7 @@ new ConfirmDialog(getSupportFragmentManager())
     .setCanceledOnTouchOutside(true)
 ```
 
+#
 **Preview** :
 
 <p align="center">
@@ -231,6 +232,7 @@ new InfoDialog(getSupportFragmentManager())
     .autoDismisOnSecond(10)
 ```
 
+#
 **Preview** :
 
 <p align="center">
@@ -281,6 +283,7 @@ new InfoDialog(getSupportFragmentManager())
     .setCanceledOnTouchOutside(true)
 ```
 
+#
 **Preview** :
 
 <p align="center">
@@ -313,6 +316,7 @@ loadingDialog.show();
 loadingDialog.dismis();
 ```
 
+#
 **Preview** :
 
 <p align="center">
@@ -359,8 +363,7 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 - `setStartDate()` optional.
 - `setEndDate()` optional.
 
-or you can write it like this.
-
+#
 **Preview** :
 
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_19.png"/>|
@@ -408,6 +411,7 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 - `setStartDate()` optional.
 - `setEndDate()` optional.
 
+#
 **Preview** :
 
 |<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/MyLibDialog/blob/main/preview/MyLibDialog_23.png"/>|
