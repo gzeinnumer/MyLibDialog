@@ -420,6 +420,10 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/M
 
 ---
 
+[Sample Code And App](https://github.com/gzeinnumer/MyLibDialogExample)
+
+---
+
 ### Version
 - **1.0.5**
   - First Release
